@@ -43,7 +43,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.45;
-  margin-bottom: 80px;
+  color: black;
 }
 
 h3 {
@@ -54,7 +54,7 @@ h3 {
 }
 
 /* bg */
-.bg-img {
+.blog .bg-img {
   position: fixed;
   top: 0;
   left: 0;
@@ -67,7 +67,7 @@ h3 {
 }
 
 /* Titulo */
-h1 {
+.blog h1 {
   text-align: center;
   font-family: "Sora", sans-serif;
   font-weight: bold;
@@ -76,7 +76,7 @@ h1 {
   padding: 20px;
   background-color: white;
   display: inline-block;
-  margin: 50px;
+  margin: 50px 50px 50px 80px;
 }
 
 /* MENU */
@@ -88,8 +88,8 @@ h1 {
   list-style: none;
   display: inline-block;
   position: fixed;
-  bottom: 0;
-  left: 40px;
+  bottom: 100px;
+  left: 3%;
   padding: 10px;
   background-color: white;
   transform: translate(0, 50%) rotate(-90deg);
@@ -120,30 +120,33 @@ h1 {
   width: 40vmin;
   height: 40vmin;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
 
+/* bootstrap edit */
+@media (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.col {
+  padding: 0;
+}
+
 /* CARDS */
 .cards {
-  max-width: 100%;
-  margin: 0 15vw;
-  position: relative;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr
+  max-width: 80%;
+  margin: 12vh auto 0 auto;
 }
 
-.card-container {
-  position: relative;
-}
 
 .card {
   display: flex;
   flex-direction: column;
-  position: absolute;
 }
 
 .card-content a {
@@ -157,25 +160,26 @@ h1 {
 
 .card-content p {
   max-width: 80%;
+  margin: 1em 0;
 }
 
 .card-content {
   padding: 20px;
   position: relative;
+  min-height: 250px;
 }
 
-.card.telas {
-  max-width: 580px;  
+ .card.telas {
   flex-direction: row;
-  top: 0;
-  left: 0;
-}
+} 
 
-.card.mapa {
-  max-width: 370px;
-  top: 0;
-  right: 0;
-}
+.card.residencia {
+  transform: translateY(-10%);
+} 
+
+.card.cartografia {
+  transform: translateY(80%);
+} 
 
 
 
