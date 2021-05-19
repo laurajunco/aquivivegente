@@ -15,19 +15,38 @@
 get_header();
 ?>
 
-	<!-- <main id="primary" class="site-main"> -->
-		<img class="bg-img" src="<?php bloginfo('template_url' )?>/assets/bg.svg">
-		<div class="hero">
-		<h1>Aquí vive gente</h1>
+<main id="primary" class="site-main">
+<img class="fixed-circle" src="<?php bloginfo( 'template_url' )?>/assets/circulo.png" alt="">
+
+	<section class="cards">
+
+	<div class="card-container">
+		<div class="card morado telas">
+			<img src="<?php bloginfo( 'template_url' )?>/assets/telas_bg.png" alt="">
+			<div class="card-content">
+				<h3>Telas</h3>
+				<p>Las telas de Círculo de Mujeres Aisha y Espacio Odeón fueron procesos de encuentro entre los equipos de las organizaciones, maneras de conocernos de forma más profunda y de representarnos y crear una memoria de nuestros procesos juntos. </p>
+				<a href="">Leer + </a>
+			</div>
 		</div>
-		<p>
-		Este espacio al que hemos llamado museo, justamente como una forma de confrontar esa noción y la institucionalización de la memoria y la experiencia, es aquello que muchos museos no son: un espacio para habitar, un lugar que va más allá de la contemplación de los objetos y su mediación jerarquizada para dar paso a la construcción de un sentido, una memoria y un imaginario en común. En este proceso de trabajo en colectivo las organizaciones han creado una forma de asociatividad y solidaridad que va más allá de aquello que se exhibe, sino que propone un lugar de resistencia y movilización que desarrolla procesos de reclamo, re-apropiación del territorio y afianzamiento de lazos comunitarios, y que recupera el espacio de encuentro entre los cuerpos para acompañarse y afectarse unos a otros en sus experiencias y luchas. 
-		</p>
-	
-		<h3>
-		<a href="" class="href"> Entrar </a>
-		</h3>
-	<!--</main> #main -->
+	</div>
+
+	<div class="card-container">
+		<div class="card azul mapa">
+			<img src="<?php bloginfo( 'template_url' )?>/assets/mapa_bg.png" alt="">
+			<div class="card-content">
+				<h3>Mapa conceptual</h3>
+				<p>La conceptualización del Museo y de todo lo que debía suceder aquí. En esos talleres definimos los ejes centrales—memoria, territorio, pedagogía y sostenibilidad—y nos preguntamos por las formas de abordar y hacer visibles tanto esos ejes como las historias y procesos de cada organización.</p>
+				<a href="">Leer + </a>
+			</div>
+		</div>
+	</div>
+
+
+	</section>
+
+
+</main><!-- #main -->
 
 <?php
 get_footer();

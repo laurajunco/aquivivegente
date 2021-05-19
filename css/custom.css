@@ -1,3 +1,205 @@
+:root {
+  --morado: #7580E2;
+  --amarillo: #FCF351;
+  --naranja: #F89448;
+  --rosado: #DDB9E2;
+  --azul: #5EE6EB;
+  --verde: #07D07B;
+  --marino: #88E5CC;
+}
+
+.morado {
+  background-color: var(--morado);
+}
+
+.amarillo {
+  background-color: var(--amarillo);
+}
+
+.naranja {
+  background-color: var(--naranja);
+}
+
+.rosado {
+  background-color: var(--rosado);
+}
+
+.azul {
+  background-color: var(--azul);
+}
+
+.verde {
+  background-color: var(--verde);
+}
+
+.marino {
+  background-color: var(--marino);
+}
+
 body {
-  
+  width: 100%;
+  margin: 0;
+  font-family: "Arimo", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.45;
+  margin-bottom: 80px;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* bg */
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Titulo */
+h1 {
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 1;
+  padding: 20px;
+  background-color: white;
+  display: inline-block;
+  margin: 50px;
+}
+
+/* MENU */
+.menu {
+  text-transform: uppercase;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  list-style: none;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  padding: 10px;
+  background-color: white;
+  transform: translate(0, 50%) rotate(-90deg);
+  transform-origin: 0% 0%;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li::after {
+  content: "|";
+  margin: 0 10px;
+}
+
+.menu li:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+/* FIXED CIRCLE */
+.fixed-circle {
+  width: 40vmin;
+  height: 40vmin;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* CARDS */
+.cards {
+  max-width: 100%;
+  margin: 0 15vw;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.card-container {
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card-content p {
+  max-width: 80%;
+}
+
+.card-content {
+  padding: 20px;
+  position: relative;
+}
+
+.card.telas {
+  max-width: 580px;  
+  flex-direction: row;
+  top: 0;
+  left: 0;
+}
+
+.card.mapa {
+  max-width: 370px;
+  top: 0;
+  right: 0;
+}
+
+
+
+/* TIPOGRAFIA */
+@font-face {
+  font-family: "Sora";
+  src: url("./fonts/Sora/Sora-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("../fonts/Sora/Sora-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/Arimo/Arimo-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/Arimo/Arimo-Bold.ttf") format("truetype");
+  font-weight: bold;
 }

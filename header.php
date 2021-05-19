@@ -22,21 +22,27 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<?php if ( is_home() ) : ?>
+
+<img class="bg-img" src="<?php bloginfo( 'template_url' )?>/assets/bg_mapa.svg">
+
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-						
-		</div><!-- .site-branding -->
-		<nav id="site-navigation" class="main-navigation">
+				<h1><?php bloginfo( 'name' )?></h1>
+		</div>
 
+		<nav id="site-navigation" class="main-navigation">
 			<?php
-			// wp_nav_menu(
-			// 	array(
-			// 		'theme_location' => 'menu-1',
-			// 		'menu_id'        => 'primary-menu',
-			// 	)
-			// );
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+<?php endif;?>
