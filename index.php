@@ -21,7 +21,19 @@ get_header();
 
 	<section class="cards container">
 
-		<div class="row">
+	<div class="row">
+			<?php query_posts('posts_per_page=6');?>
+			<?php if ( have_posts() ) :
+				$item_number = 1;
+				while ( have_posts() ) : the_post();		
+					get_template_part( 'template-parts/content', get_post_type() );
+					$item_number++;
+				endwhile;
+			endif;
+			?>
+		</div>
+
+		<!-- <div class="row">
 			<div class="card-container col col-lg-6"> 
 				<div class="card morado telas">
 					<img src="<?php bloginfo( 'template_url' )?>/assets/telas_bg.png" alt="">
@@ -92,7 +104,7 @@ get_header();
 				</div>
 			</div> 
 
-		</div>
+		</div> -->
 	</section>
 
 </main><!-- #main -->

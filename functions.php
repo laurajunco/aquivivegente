@@ -188,3 +188,13 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+add_filter('wp_get_attachment_image_src','delete_width_height', 10, 4);
+
+function delete_width_height($image, $attachment_id, $size, $icon){
+
+    $image[1] = '';
+    $image[2] = '';
+    return $image;
+}
