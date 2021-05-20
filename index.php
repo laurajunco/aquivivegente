@@ -43,7 +43,9 @@ get_header();
 					</div>
 				</div>
 			</div> 
+		</div> 
 
+		<div class="row">
 			<div class="card-container col col-lg-4"> 
 				<div class="card rosado residencia">
 					<img src="<?php bloginfo( 'template_url' )?>/assets/residencia_bg.png" alt="">
@@ -68,7 +70,6 @@ get_header();
 		</div>
 
 		<div class="row">
-
 			<div class="card-container col col-lg-4 col-lg-offset-2"> 
 				<div class="card verde objetos">
 					<img src="<?php bloginfo( 'template_url' )?>/assets/objetos_bg.png" alt="">
@@ -90,11 +91,9 @@ get_header();
 					</div>
 				</div>
 			</div> 
-			
-		</div>
-		
-	</section>
 
+		</div>
+	</section>
 
 </main><!-- #main -->
 
