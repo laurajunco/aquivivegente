@@ -16,7 +16,8 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-<img class="fixed-circle" src="<?php bloginfo( 'template_url' )?>/assets/circulo.png" alt="">
+<img class="fixed-circle" src="<?php bloginfo( 'template_url' )?>/assets/circulo_fixed.svg" alt="">
+<img class="fixed-logo" src="<?php bloginfo( 'template_url' )?>/assets/logo_odeon.svg" alt="">
 
 	<section class="cards container">
 
@@ -81,7 +82,7 @@ get_header();
 
 			<div class="card-container col col-lg-4 col-lg-offset-2"> 
 				<div class="card marino cocina">
-					<img src="<?php bloginfo( 'template_url' )?>/assets/objetos_bg.png" alt="">
+					<img src="<?php bloginfo( 'template_url' )?>/assets/cocina_bg.png" alt="">
 					<div class="card-content">
 						<h3>Cocina</h3>
 						<p>En esta cocina las mujeres del Círculo de Mujeres Aisha y de Asomujer y Trabajo nos dieron una serie de talleres y cocinaron almuerzos comunitarios para los participantes del proyecto y para cualquier persona que viniera a Odeón a compartir.</p>

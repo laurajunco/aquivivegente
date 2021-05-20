@@ -20,7 +20,7 @@ body.home {
 }
 
 .home p, 
-.home h3, 
+.home h3.entrar, 
 .home h6 {
   width: 780px;
   max-width: 90%;
@@ -28,10 +28,12 @@ body.home {
   margin-right: auto;
 }
 
-.home h3 {
+.home h3.entrar {
   font-family: "Sora", sans-serif;
   font-weight: bold;
   text-align: right;
+  margin-top: 5vh;
+  font-size: 40px;
 }
 
 .home a,
@@ -39,6 +41,10 @@ body.home {
 .home a:hover,
 .home a:visited {
   color: black;
+}
+
+h3.entrar a {
+  text-decoration: underline;
 }
 
 .home h1 {

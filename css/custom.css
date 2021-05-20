@@ -127,6 +127,16 @@ h3 {
   z-index: -1;
 }
 
+.fixed-logo {
+  width: 5vmin;
+  height: auto;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 /* bootstrap edit */
 @media (min-width: 1200px) {
   .container {

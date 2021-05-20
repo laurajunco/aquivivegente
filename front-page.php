@@ -18,7 +18,7 @@ get_header();
 		<?php endif; ?> 
 		
 		<?php if( get_field('boton') ): ?>
-      <h3>
+      <h3 class="entrar">
         <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="href">
           <?php the_field('boton'); ?>
         </a>
@@ -26,4 +26,4 @@ get_header();
 		<?php endif; ?> 
 
 <?php
-get_footer();
+
