@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<?php if ( is_home() ) : ?>
+<?php if ( ! is_front_page() ) : ?>
 
 <img class="bg-img" src="<?php bloginfo( 'template_url' )?>/assets/bg_mapa.svg">
 

@@ -55,7 +55,8 @@ h3 {
 }
 
 /* bg */
-.blog .bg-img {
+.blog .bg-img,
+.single .bg-img {
   position: fixed;
   top: 0;
   left: 0;
