@@ -19,8 +19,8 @@ get_header();
 <img class="fixed-circle" src="<?php bloginfo( 'template_url' )?>/assets/circulo.png" alt="">
 
 	<section class="cards container">
-		<div class="row">
 
+		<div class="row">
 			<div class="card-container col col-lg-6"> 
 				<div class="card morado telas">
 					<img src="<?php bloginfo( 'template_url' )?>/assets/telas_bg.png" alt="">
@@ -64,20 +64,34 @@ get_header();
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="card-container col col-lg-4 col-lg-offset-3"> 
+		<div class="row">
+
+			<div class="card-container col col-lg-4 col-lg-offset-2"> 
 				<div class="card verde objetos">
-					<img src="<?php bloginfo( 'template_url' )?>/assets/cartografia_bg.png" alt="">
+					<img src="<?php bloginfo( 'template_url' )?>/assets/objetos_bg.png" alt="">
 					<div class="card-content">
-						<h3>Cartografía</h3>
+						<h3>Objetos</h3>
 						<p>A lo largo de la programación hicimos una serie de recorridos por el centro de la ciudad para entender sus procesos de transformación y gentrificación y la forma en la que impactan la vida y subsistencia de los habitantes de las localidades de La Candelaria y Santa Fé.</p>
 						<a href="">Leer + </a>
 					</div>
 				</div>
 			</div> 
 
+			<div class="card-container col col-lg-4 col-lg-offset-2"> 
+				<div class="card marino cocina">
+					<img src="<?php bloginfo( 'template_url' )?>/assets/objetos_bg.png" alt="">
+					<div class="card-content">
+						<h3>Cocina</h3>
+						<p>En esta cocina las mujeres del Círculo de Mujeres Aisha y de Asomujer y Trabajo nos dieron una serie de talleres y cocinaron almuerzos comunitarios para los participantes del proyecto y para cualquier persona que viniera a Odeón a compartir.</p>
+						<a href="">Leer + </a>
+					</div>
+				</div>
+			</div> 
+			
 		</div>
-
+		
 	</section>
 
 
