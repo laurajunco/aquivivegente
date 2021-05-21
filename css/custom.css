@@ -295,6 +295,7 @@ h3 {
   padding-bottom: 56.25%;
 }
 
+
 .m-top {
   margin-top: 150px;
 }
@@ -308,6 +309,13 @@ h3 {
   object-fit: cover;
 }
 
+.img-container.ver {
+  width: 70%;
+  padding-bottom: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .video-container .video {
   position: absolute;
   top: 0;
@@ -315,6 +323,7 @@ h3 {
   width: 90%;
   height: 100%;
   border: none;
+  background-color: var(--amarillo);
 }
 
 .grilla {
@@ -323,7 +332,12 @@ h3 {
   left: -2.4%;
   width: 90%;
   height: 100%;
-  border: none;
+  object-fit: contain;
+}
+
+.img-container.ver .grilla {
+  bottom: -10%;
+  left: -1.5%;
 }
 
 /* TIPOGRAFIA */
