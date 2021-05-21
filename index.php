@@ -17,8 +17,8 @@ get_header();
 
 <main id="primary" class="site-main">
 
-	<img class="fixed-circle" src="<?php bloginfo( 'template_url' )?>/assets/circulo_fixed.svg" alt="">
-	<img class="fixed-logo" src="<?php bloginfo( 'template_url' )?>/assets/logo_odeon.svg" alt="">
+	<img class="fixed-circle" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/circulo_fixed.svg" alt="">
+	<img class="fixed-logo" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/logo_odeon.svg" alt="">
 
 	<section class="cards container">
 		<?php query_posts('category_name=home&posts_per_page=6&orderby=date&order=ASC');?>

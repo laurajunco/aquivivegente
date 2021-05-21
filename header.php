@@ -25,7 +25,7 @@
 
 <?php if ( ! is_front_page() ) : ?>
 
-<img class="bg-img" src="<?php bloginfo( 'template_url' )?>/assets/bg_mapa.svg">
+<img class="bg-img" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/bg_mapa.svg">
 
 <div id="page" class="site">
 
