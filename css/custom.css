@@ -23,7 +23,7 @@
 }
 
 .blanco {
-  background-color: var(--amarillo);
+  background-color: var(--blanco);
 }
 
 .naranja {
@@ -257,6 +257,20 @@ h3 {
 .content-container p {
   font-size: 20px;
   line-height: 1.5;
+}
+
+.content-container .small {
+  margin-top: 40px;
+}
+
+.content-container .small,
+.content-container .small p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.content-container.programacion p {
+  margin-bottom: 50px;
 }
 
 /* TIPOGRAFIA */

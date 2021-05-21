@@ -21,7 +21,7 @@ get_header();
 	<img class="fixed-logo" src="<?php bloginfo( 'template_url' )?>/assets/logo_odeon.svg" alt="">
 
 	<section class="cards container">
-		<?php query_posts('posts_per_page=6&orderby=date&order=ASC');?>
+		<?php query_posts('category_name=home&posts_per_page=6&orderby=date&order=ASC');?>
 			<?php if ( have_posts() ) :
 				$item_number = 1;
 				while ( have_posts() ) : the_post();	
