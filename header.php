@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-</head>
+</head> 
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
@@ -31,7 +31,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-				<h1><?php bloginfo( 'name' )?></h1>
+		<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"><h1><?php bloginfo( 'name' )?></h1></a>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation">

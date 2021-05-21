@@ -103,6 +103,12 @@ h3 {
   margin: 50px 50px 50px 80px;
 }
 
+.site-branding a {
+  color: black;
+}
+
+
+
 /* MENU */
 .menu {
   text-transform: uppercase;
