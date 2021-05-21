@@ -1,18 +1,28 @@
 :root {
   --morado: #7580E2;
+  --morado-info: #5A5AFC;
   --amarillo: #FCF351;
   --naranja: #F89448;
   --rosado: #DDB9E2;
   --azul: #5EE6EB;
   --verde: #07D07B;
   --marino: #88E5CC;
+  --blanco: #FFFFFF;
 }
 
 .morado {
   background-color: var(--morado);
 }
 
+.morado-info {
+  background-color: var(--morado-info);
+}
+
 .amarillo {
+  background-color: var(--amarillo);
+}
+
+.blanco {
   background-color: var(--amarillo);
 }
 
@@ -61,11 +71,6 @@ h3 {
   margin: 0;
 }
 
-.texto-block p {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
 /* bg */
 .blog .bg-img,
 .single .bg-img {
@@ -78,6 +83,10 @@ h3 {
   object-position: top center;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+}
+
+.single .bg-img {
+  opacity: 0.5;
 }
 
 /* Titulo */
@@ -240,8 +249,14 @@ h3 {
   width: 90%;
   min-height: 80vh;
   margin: 10vh 0 0 auto;
-  padding-top: 80px; 
+  padding: 80px 0 150px 0; 
   position: relative;
+  overflow-x: hidden;
+}
+
+.content-container p {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 /* TIPOGRAFIA */
