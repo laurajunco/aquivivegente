@@ -16,6 +16,7 @@
       <h2><?php the_title(); ?></h2>
       <?php the_content(); ?>
     </div>
+    <?php get_template_part( 'template-parts/content-single', basename(get_permalink()) );?>
   </div>
 
 </div>
