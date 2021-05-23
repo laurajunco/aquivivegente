@@ -135,6 +135,10 @@ h3 {
   color: black;
 }
 
+.menu a:hover {
+  text-decoration: underline;
+}
+
 .menu li::after {
   content: "|";
   margin: 0 10px;
@@ -143,6 +147,11 @@ h3 {
 .menu li:last-child::after {
   content: "";
   margin: 0;
+}
+
+.current-menu-item a {
+  color: blue;
+  text-decoration: underline;
 }
 
 /* FIXED CIRCLE */
@@ -300,6 +309,11 @@ h3 {
   margin-top: 150px;
 }
 
+.m-top-50 {
+  margin-top: 50px;
+}
+
+
 .img-container .img-content {
   position: absolute;
   top: 0;
@@ -338,6 +352,22 @@ h3 {
 .img-container.ver .grilla {
   bottom: -10%;
   left: -1.5%;
+}
+
+.content-link {
+  padding: 15px;
+  margin-top: 60px;
+  display: block;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.content-link:hover,
+.content-link:active,
+.content-link:visited {
+  color: black;
 }
 
 /* TIPOGRAFIA */
