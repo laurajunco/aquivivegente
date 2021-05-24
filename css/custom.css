@@ -376,6 +376,11 @@ h3 {
   top: 40px;
 }
 
+.insta-video iframe {
+  margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 /* TIPOGRAFIA */
 @font-face {
   font-family: "Sora";
