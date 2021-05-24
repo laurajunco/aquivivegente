@@ -1,4 +1,7 @@
-$(document).ready(function(){
- console.log("Jquery works!")
-});
-console.log(":(")
+(function ($, root, undefined) {
+  $('.galeria').slick({
+    slidesToShow: 3.5,
+    initialSlide: 0.5
+  });
+})(jQuery, this);
+

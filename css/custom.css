@@ -381,6 +381,14 @@ h3 {
     margin-right: auto !important;
 }
 
+/* GALERIA */
+.galeria {
+  margin-top: 80px;
+}
+.slick-slide {
+  margin: 10px;
+}
+
 /* TIPOGRAFIA */
 @font-face {
   font-family: "Sora";
