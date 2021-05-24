@@ -41,6 +41,7 @@ window.addEventListener('resize', () => {
 
 /* BARBA */
 const bodyTag = document.querySelector("body")
+const cardsTag = document.querySelector("cards")
 
 barba.use(barbaCss)
 
