@@ -266,7 +266,7 @@ h3 {
   margin: 10vh 0 0 auto;
   padding: 80px 0 150px 0; 
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .content-container p {
@@ -368,6 +368,12 @@ h3 {
 .content-link:active,
 .content-link:visited {
   color: black;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
 }
 
 /* TIPOGRAFIA */
