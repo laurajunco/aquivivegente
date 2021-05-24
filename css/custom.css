@@ -189,7 +189,8 @@ h3 {
 .row {
   margin: 0;
 }
-.col {
+
+.col, .container {
   padding: 0;
 }
 
