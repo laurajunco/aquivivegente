@@ -40,6 +40,8 @@ window.addEventListener('resize', () => {
 
 
 /* BARBA */
+const bodyTag = document.querySelector("body")
+
 barba.use(barbaCss)
 
 barba.init({
@@ -49,6 +51,19 @@ barba.init({
       beforeLeave({ current, next, trigger })  {
         scrolltop()
         selectNav(next)
+      }
+    }
+  ],
+  views: [
+    {
+      namespace: "single",
+      beforeEnter() {
+        bodyTag.classList.add("single");
+        bodyTag.classList.remove("blog");
+      },
+      beforeLeave() {
+        bodyTag.classList.remove("single");
+        bodyTag.classList.add("blog");
       }
     }
   ]

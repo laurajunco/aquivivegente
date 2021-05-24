@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main" data-barba="container">
+	<main id="primary" class="site-main" data-barba="container" data-barba-namespace="single">
 
 		<?php
 		while ( have_posts() ) :
