@@ -42,3 +42,28 @@
   <?php endif; ?>
 
   </div>
+
+  </div> <!--end row-->
+
+<div class="row">
+<?php $galeria = get_field('galeria');?>
+  <div class="col-lg-10 col-lg-offset-1 galeria">
+    <img class="img-galeria" src="<?php echo $galeria['img_1'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_2'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_3'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_4'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_5'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_6'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_7'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_8'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_9'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_10'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_11'] ?>" />
+    <img class="img-galeria" src="<?php echo $galeria['img_12'] ?>" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-10 col-lg-offset-1 slick-next" id="objetos-next"> 
+    <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/next-arrow.svg">
+  </div>
