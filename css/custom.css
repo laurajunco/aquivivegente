@@ -389,6 +389,11 @@ h3 {
   margin: 10px;
 }
 
+.slick-next span, 
+.slick-next img {
+  cursor: pointer;
+}
+
 /* TIPOGRAFIA */
 @font-face {
   font-family: "Sora";

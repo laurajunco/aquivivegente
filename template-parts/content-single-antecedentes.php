@@ -53,7 +53,10 @@
     <img class="img-galeria" src="<?php echo $galeria['img_11'] ?>" />
     <img class="img-galeria" src="<?php echo $galeria['img_12'] ?>" />
   </div>
-  
-  <span class="slick-next" id ="objetos-next">Objetos del museo </span> 
-  <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/next-arrow.svg">
 </div>
+
+<div class="row">
+  <div class="col-lg-10 col-lg-offset-1 slick-next" id="objetos-next"> 
+    <span ><strong>Objetos del museo</strong> </span> 
+    <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/next-arrow.svg">
+  </div>
