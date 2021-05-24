@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head> 
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-barba="wrapper">
 <?php wp_body_open(); ?>
 
 <?php if ( ! is_front_page() ) : ?>

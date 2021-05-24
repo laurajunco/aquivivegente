@@ -11,7 +11,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+  position: relative;
 }
 
 .morado {
@@ -248,6 +249,11 @@ h3 {
 } 
 
 /* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .site-info {
   min-height: 45px;
   background-color: white;
@@ -451,6 +457,29 @@ h3 {
 .subir img {
   width: 10px;
   margin-bottom: 5px;
+}
+
+/* BARBA */
+.fade-leave-active,
+.fade-enter-active {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);;
+}
+
+/* Initial state */
+.fade-leave {
+  transform: translate(0, 0);
+}
+
+.fade-leave-to {
+  transform: translate(100%, 0);
+}
+
+.fade-enter {
+  transform: translate(100%, 0);
+}
+
+.fade-enter-to {
+  transform: translate(0, 0);
 }
 
 /* TIPOGRAFIA */

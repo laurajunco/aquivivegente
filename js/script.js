@@ -10,7 +10,8 @@ if (circleTag) {
 
 if (upBtnTag) {
   upBtnTag.addEventListener("click", function() {
-    window.scrollTo(0, 0);
+    window.scrollTo({top: 0,behavior: "smooth"});
+    console.log("up")
   })
 }
 
@@ -36,3 +37,35 @@ window.addEventListener('resize', () => {
   });
 
 })(jQuery, this);
+
+
+/* BARBA */
+barba.use(barbaCss)
+
+barba.init({
+  transitions: [
+    {
+      name: "fade",
+      beforeLeave({ current, next, trigger })  {
+        scrolltop()
+        selectNav(next)
+      }
+    }
+  ]
+})
+
+const scrolltop = () => {
+  window.scrollTo({top: 0})
+}
+
+const selectNav = (next) => {
+  const headerLinks = document.querySelectorAll(".menu .menu-item a")
+  const href = next.url.href
+  headerLinks.forEach(link => {
+    if(link.getAttribute("href") === href) {
+      link.parentNode.classList.add("current-menu-item")
+    } else {
+      link.parentNode.classList.remove("current-menu-item")
+    }
+  })
+}
