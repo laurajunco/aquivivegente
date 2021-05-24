@@ -24,4 +24,17 @@
     <?php get_template_part( 'template-parts/content-single', basename(get_permalink()) );?>
   </div>
 
+  <div class="sidebar "> 
+    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/close.svg"></a>
+
+    <?php if( get_field('img1') ): ?>
+      <p><?php the_field( 'side-title' ); ?></p>
+    <?php endif; ?>
+  </div>
+
+  <div class="subir"> 
+  <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/arrow-up.svg"> <span >Subir</span> 
+    
+  </div>
+
 </div>

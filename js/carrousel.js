@@ -6,5 +6,6 @@
     prevArrow: null,
     nextArrow: $('#objetos-next')
   });
-})(jQuery, this);
 
+
+})(jQuery, this);

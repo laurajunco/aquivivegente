@@ -10,6 +10,10 @@
   --blanco: #FFFFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .morado {
   background-color: var(--morado);
 }
@@ -399,6 +403,53 @@ h3 {
 
 .slick-next img {
   width: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: absolute;
+  top: 50px;
+  /* position: fixed;
+  top: 30%; */
+  right: 50px;
+}
+
+.sidebar img {
+  float: right;
+  width: 35px;
+}
+
+.sidebar p {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  transform: translate(5%, 50%) rotate(-90deg);
+  transform-origin: 100% 0%;
+  margin: 0;
+  max-width: 30vh;
+  text-align: end;
+  margin-top: 90px;
+}
+
+.telas .sidebar p {
+  transform: translate(0, 50%) rotate(-90deg);
+}
+
+.subir {
+  text-align: end;
+  margin-right: 50px;
+  margin-top: 100px;
+  margin-bottom: -50px;
+}
+
+.subir span,
+.subir img {
+  cursor: pointer;
+}
+
+.subir img {
+  width: 10px;
+  margin-bottom: 5px;
 }
 
 /* TIPOGRAFIA */
