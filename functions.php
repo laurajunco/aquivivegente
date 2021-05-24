@@ -152,13 +152,9 @@ function aquivivegente_scripts() {
 
 	wp_enqueue_script( 'aquivivegente-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.7.0', true );
 
-	wp_enqueue_script( 'aquivivegente-vh', get_template_directory_uri() . '/js/vh.js', array(), _S_VERSION, true );
-
-	wp_enqueue_script( 'aquivivegente-scroll', get_template_directory_uri() . '/js/scroll.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'aquivivegente-scroll', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script( 'aquivivegente-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-	wp_enqueue_script( 'aquivivegente-carrousel', get_template_directory_uri() . '/js/carrousel.js', array('jquery'), _S_VERSION, true  );
 
 	wp_style_add_data( 'aquivivegente-style', 'rtl', 'replace' );
 
