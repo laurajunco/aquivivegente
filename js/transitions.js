@@ -1,5 +1,4 @@
 const runScripts = () => {
-  console.log("js works!")
   const circleTag = document.querySelector(".fixed-circle")
   const upBtnTag = document.querySelector(".subir")
   
@@ -13,7 +12,6 @@ const runScripts = () => {
   if (upBtnTag) {
     upBtnTag.addEventListener("click", function() {
       window.scrollTo({top: 0,behavior: "smooth"});
-      console.log("up")
     })
   }
   
@@ -52,11 +50,11 @@ barba.init({
   transitions: [
     {
       name: "fade",
-      afterEnter({ current, next, trigger }) {
+      afterEnter() {
         runScripts()
-      },
-      beforeLeave({ current, next, trigger })  {
         scrolltop()
+      },
+      beforeLeave({next})  {
         selectNav(next)
       }
     }
@@ -77,7 +75,7 @@ barba.init({
 })
 
 const scrolltop = () => {
-  window.scrollTo({top: 0})
+  window.scrollTo({top: 0, behavior:"smooth"})
 }
 
 const selectNav = (next) => {
