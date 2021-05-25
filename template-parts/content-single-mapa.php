@@ -8,7 +8,7 @@
     <?php endif; ?>
 
     <?php if( get_field('enlace') ): ?>
-    <a class="content-link end" href="<?php the_field('enlace'); ?>">
+    <a class="content-link" target="_blank" href="<?php the_field('enlace'); ?>">
       <?php the_field('texto_enlace'); ?>
       <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/link.svg" alt="">
     </a>
