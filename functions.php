@@ -197,3 +197,19 @@ function delete_width_height($image, $attachment_id, $size, $icon){
     $image[2] = '';
     return $image;
 }
+
+function add_objects() {
+
+	$labels = array(
+		'name'                  => _x( 'Objetos', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Objeto', 'Post Type Singular Name', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                => $labels,
+		'taxonomies'            => array( 'category'),
+		'public'                => true,
+	);
+	register_post_type( 'objeto', $args );
+
+}
+add_action( 'init', 'add_objects', 0 );

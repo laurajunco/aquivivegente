@@ -450,7 +450,8 @@ footer {
   margin-top: 90px;
 }
 
-.telas .sidebar p {
+.telas .sidebar p,
+.cocina .sidebar p {
   transform: translate(0, 50%) rotate(-90deg);
 }
 
