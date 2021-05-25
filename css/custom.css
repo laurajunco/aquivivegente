@@ -370,13 +370,24 @@ footer {
 }
 
 .content-link {
-  padding: 15px;
-  margin-top: 60px;
+  padding: 15px 0;
+  margin-top: 80px;
   display: block;
-  text-decoration: underline;
   color: black;
   font-weight: bold;
-  font-size: 15px;
+}
+
+.acerca.content-link {
+  margin-top: 20px;
+}
+
+.content-link img {
+  width: 18px;
+  margin-left: 5px;
+}
+
+.content-link.end {
+  text-align: end;
 }
 
 .content-link:hover,

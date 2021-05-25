@@ -13,4 +13,8 @@
         <img class="img-content" src="<?php the_field('img2'); ?>" alt="">
     </div>
   <?php endif; ?>
+
+  <?php if( get_field('archivo') ): ?>
+    <a class="content-link end" download href="<?php the_field('archivo'); ?>"><?php the_field('texto_archivo'); ?> <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/descargar.svg" alt=""></a>
+    <?php endif; ?>
 </div>
