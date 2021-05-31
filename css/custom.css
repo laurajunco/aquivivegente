@@ -524,6 +524,11 @@ footer {
   transform: translate(0, 0);
 }
 
+/* OBJETOS */
+.objects {
+  background-color: red;
+}
+
 /* TIPOGRAFIA */
 @font-face {
   font-family: "Sora";
