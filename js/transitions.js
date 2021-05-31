@@ -1,7 +1,11 @@
 (function ($, root, undefined) {
   const runScripts = () => {
+
+    const genteMainFooter = document.querySelector(".page-id-297 .site-footer")
     const circleTag = document.querySelector(".fixed-circle")
     const upBtnTag = document.querySelector(".subir")
+
+    genteMainFooter.style.visibility = "hidden"
     
     if (circleTag) {
       document.addEventListener("scroll", function() {
