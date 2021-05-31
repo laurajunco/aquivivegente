@@ -16,12 +16,6 @@ get_header();
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-5 col-lg-offset-1">
-      <?php the_content(); ?>
-    </div>
-  </div>
-
   <?php get_template_part( 'template-parts/content-single', basename(get_permalink()) );?>
   
   <div class="sidebar "> 
