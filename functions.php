@@ -213,3 +213,19 @@ function add_objects() {
 
 }
 add_action( 'init', 'add_objects', 0 );
+
+function add_gente() {
+
+	$labels = array(
+		'name'                  => _x( 'Gente', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Grupo', 'Post Type Singular Name', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                => $labels,
+		'taxonomies'            => array( 'category'),
+		'public'                => true,
+	);
+	register_post_type( 'gente', $args );
+
+}
+add_action( 'init', 'add_gente', 0 );
