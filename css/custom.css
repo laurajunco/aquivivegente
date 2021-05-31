@@ -598,13 +598,9 @@ footer {
 }
 
 /* LA GENTE */
-.page-id-297 {
-  overflow-y: hidden;
-}
 .content-container.content-container-gente {
   padding-bottom: 0;
   padding-top: 0;
-  overflow-y: hidden;
   min-height: 0;
 }
 
@@ -620,6 +616,11 @@ footer {
   min-height: 80vh;
   padding: 35px;
   overflow-y: scroll;
+  height: 60vh;
+}
+
+.grupo::-webkit-scrollbar {
+    display: none;
 }
 
 /* TIPOGRAFIA */
