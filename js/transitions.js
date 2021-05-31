@@ -32,6 +32,15 @@
       prevArrow: null,
       nextArrow: $('#objetos-next')
     });
+
+    $('.la-gente-galeria').slick({
+      slidesToShow: 3,
+      initialSlide: 1,
+      slidesToScroll: 1,
+      prevArrow: null,
+      nextArrow: null
+    });
+  
   }
 
   runScripts()

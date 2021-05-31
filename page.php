@@ -15,11 +15,19 @@
 get_header();
 ?>
 	<main id="primary" class="site-main single-main" data-barba="container" data-barba-namespace="single">
-	<div class="content-container">
+	<div class="content-container content-container-gente">
   <div class="row">
-  <div class="col-lg-11 col-lg-offset-1 amarillo">
+  <div class="col-lg-11 col-lg-offset-1 la-gente">
       
-  <!-- carrusel acá -->
+  <?php query_posts('post_type=gente&posts_per_page=5&orderby=date&order=ASC');?>
+  
+    <?php if ( have_posts() ) :?>
+      <div class="la-gente-galeria">
+        <?php while ( have_posts() ) : the_post(); ?>
+          <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
+        <?php endwhile;?>
+      </div>
+    <?php endif;?>
   </div>
   </div>
   </div>
