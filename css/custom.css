@@ -76,7 +76,7 @@ h3 {
   margin: 0;
 }
 
-/* bg */
+/* imagen de fondo */
 .blog .bg-img,
 .single .bg-img {
   position: fixed;
@@ -112,7 +112,6 @@ h3 {
 .site-branding a {
   color: black;
 }
-
 
 /* MENU */
 .menu {
@@ -260,6 +259,7 @@ h3 {
     right: 40px;
     margin: 0;
 }
+
 .objetos-container {
   padding: 75px 50px 0 25px;
   background-image: url('../assets/malla.svg');
@@ -323,9 +323,6 @@ h3 {
   margin-top: 7vh;
   margin-bottom: 7vh;
 }
-
-
-
 
 /* FOOTER */
 footer {
@@ -398,7 +395,6 @@ footer {
   padding-bottom: 56.25%;
 }
 
-
 .m-top {
   margin-top: 150px;
 }
@@ -406,7 +402,6 @@ footer {
 .m-top-50 {
   margin-top: 50px;
 }
-
 
 .img-container .img-content {
   position: absolute;
@@ -579,7 +574,6 @@ footer {
 .blog-main.fade-enter-active {
   transition: opacity 0.2s,
               transform 0.2s;
-
 }
 
 /* Initial state */
@@ -602,7 +596,6 @@ footer {
   opacity: 1;
   transform: translate(0, 0);
 }
-
 
 /* TIPOGRAFIA */
 @font-face {
