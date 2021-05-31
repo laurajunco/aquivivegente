@@ -249,8 +249,18 @@ h3 {
 } 
 
 /* OBJETOS */
+.objetos.content-container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.objetos .subir {
+  position: absolute;
+    bottom: 100px;
+    right: 40px;
+    margin: 0;
+}
 .objetos-container {
-  /* background-color: #fff; */
   padding: 75px 50px 0 25px;
   background-image: url('../assets/malla.svg');
   background-size: cover;
@@ -260,9 +270,13 @@ h3 {
   flex-direction: row;
 }
 
+.objetos .card-container img {
+  object-fit: cover;
+}
+
 .content-container .card-container p {
   font-size: 14px;
-  max-width: 80%;
+  max-width: 90%;
   margin: 1em 0;
 }
 
@@ -270,6 +284,48 @@ h3 {
   margin: 0 0 1em 0;
   font-weight: bold;
 }
+
+.objetos .card-container:nth-child(2) {
+  transform: translate(0, 25%);
+}
+
+.objetos .card-container:nth-child(3) {
+  transform: translate(0, -50%);
+}
+
+.objetos .card-container:nth-child(4),
+.objetos .card-container:nth-child(8),
+.objetos .card-container:nth-child(9) {
+  margin-bottom: 8vh;
+}
+
+.objetos .card-container:nth-child(6) {
+  transform: translate(0, 25%);
+}
+
+.objetos .card-container:nth-child(7) {
+  transform: translate(0, -70%);
+}
+
+.objetos .card-container:nth-child(11) {
+  margin-top: 8vh;
+}
+
+.objetos .card-container:nth-child(12) {
+  margin-top: 5vh;
+}
+
+.objetos .card-container:nth-child(13) {
+  margin-top: 20vh;
+}
+
+.objetos .card-container:nth-child(14) {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+
+
 
 /* FOOTER */
 footer {

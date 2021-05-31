@@ -26,10 +26,7 @@ get_header();
   
   <div class="sidebar "> 
     <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/close.svg"></a>
-
-    <?php if( get_field('side-title') ): ?>
-      <p><?php the_field( 'side-title' ); ?></p>
-    <?php endif; ?>
+    <p>TODOS LOS COLECTIVOS</p>
   </div>
 
   <div class="subir"> 

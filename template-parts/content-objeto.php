@@ -14,8 +14,7 @@
 	<img src=<?php the_field( 'img' ); ?> class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">
 		<div class="card-content">
 			<p class="objeto-title"><?php the_title(); ?></p>
-			<p class="objeto-des"> <?php the_excerpt(); ?></p>
-			<a href="<?php the_permalink(); ?>">Leer + </a>
+			<p class="objeto-des"> <?php the_content(); ?></p>
 		</div>
 	</div>
 </div>
