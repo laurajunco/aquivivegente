@@ -248,6 +248,29 @@ h3 {
   margin-top: 100%
 } 
 
+/* OBJETOS */
+.objetos-container {
+  /* background-color: #fff; */
+  padding: 75px 50px 0 25px;
+  background-image: url('../assets/malla.svg');
+  background-size: cover;
+}
+
+.objetos .card.horizontal {
+  flex-direction: row;
+}
+
+.content-container .card-container p {
+  font-size: 14px;
+  max-width: 80%;
+  margin: 1em 0;
+}
+
+.content-container .card-container .objeto-title {
+  margin: 0 0 1em 0;
+  font-weight: bold;
+}
+
 /* FOOTER */
 footer {
   position: absolute;
@@ -524,10 +547,6 @@ footer {
   transform: translate(0, 0);
 }
 
-/* OBJETOS */
-.objects {
-  background-color: red;
-}
 
 /* TIPOGRAFIA */
 @font-face {

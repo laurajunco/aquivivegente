@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-lg-10 col-lg-offset-1 objects">
+  <div class="col-lg-10 col-lg-offset-1 objetos-container">
 
   <?php query_posts('post_type=objeto&posts_per_page=14&orderby=date');?>
   
