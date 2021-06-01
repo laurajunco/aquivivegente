@@ -45,8 +45,8 @@
     if (galeriaContainer) { 
       const top = galeriaContainer.getBoundingClientRect().top
       const wHeight = window.innerHeight
-      galeriaContainer.setAttribute('style', `height:${wHeight - top - 45}px;`);
-      document.documentElement.style.setProperty('--galeria', `${wHeight - top -45}px`);
+      galeriaContainer.setAttribute('style', `height:${wHeight - top}px;`);
+      document.documentElement.style.setProperty('--galeria', `${wHeight - top}px`);
     }
   
   }
@@ -91,8 +91,18 @@
   }
 
   const selectNav = (next) => {
+    
     const headerLinks = document.querySelectorAll(".menu .menu-item a")
     const href = next.url.href
+
+    if (next.url.path === "/gente/") {
+      console.log("gente!")
+      document.querySelector("body").classList.add("y-hidden")
+      document.querySelector("footer").classList.add("hidden")
+    } else {
+      document.querySelector("body").classList.remove("y-hidden")
+      document.querySelector("footer").classList.remove("hidden")
+    }
     headerLinks.forEach(link => {
       if(link.getAttribute("href") === href) {
         link.parentNode.classList.add("current-menu-item")
