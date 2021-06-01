@@ -619,6 +619,10 @@ footer {
   display: block;
 }
 
+.slick-slide .grupo {
+  overflow-y: scroll;
+}
+
 .la-gente-galeria,  .la-gente-galeria .grupo {
   height: var(--galeria);
   overflow: hidden;
@@ -719,6 +723,25 @@ footer.hidden {
   margin: 0 10px;
 }
 
+.video-container-gente {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  margin: 35px 0;
+}
+
+.video-container-gente .video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--amarillo);
+  border: none;
+}
+
+.no-m-top {
+  margin-top: 0;
+}
 
 
 /* TIPOGRAFIA */
