@@ -4,8 +4,9 @@
     const circleTag = document.querySelector(".fixed-circle")
     const upBtnTag = document.querySelector(".subir")
     const galeriaContainer = document.querySelector(".la-gente-galeria")
+    const subirGenteTags = document.querySelectorAll(".subir-gente")
 
-    
+    console.log(subirGenteTags)
     if (circleTag) {
       document.addEventListener("scroll", function() {
         const pixels = Math.floor(window.pageYOffset)
@@ -38,15 +39,14 @@
     $('.la-gente-galeria').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      prevArrow: null,
-      nextArrow: null
+      prevArrow: $('.left-arrow-la-gente'),
+      nextArrow: $('.right-arrow-la-gente')
     });
 
     document.addEventListener("DOMContentLoaded", function(){
       if (galeriaContainer) { 
         const top = galeriaContainer.getBoundingClientRect().top
         const wHeight = window.innerHeight
-        console.log(top, wHeight)
         document.documentElement.style.setProperty('--galeria', `${wHeight - top}px`);
       }
     });

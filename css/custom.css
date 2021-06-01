@@ -621,6 +621,7 @@ footer {
 
 .la-gente-galeria,  .la-gente-galeria .grupo {
   height: var(--galeria);
+  overflow: hidden;
 }
 
 .la-gente {
@@ -635,7 +636,6 @@ footer {
   padding: 35px 35px 150px 35px;
   overflow-y: scroll;
   width: 100%;
-  transition: width 1s;
 }
 
 .grupo::-webkit-scrollbar {
@@ -686,6 +686,38 @@ footer.hidden {
   margin-bottom: 20px;
   font-size: 16px;
 }
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: -40px;
+}
+
+.arrows div {
+  cursor: pointer;
+}
+
+.arrows img {
+  margin: 0 10px;
+  width: 20px;
+}
+
+.subir-gente {
+  display: flex;
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.subir-gente img {
+  width: 10px;
+  margin: 0 10px;
+}
+
 
 
 /* TIPOGRAFIA */

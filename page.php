@@ -18,6 +18,14 @@ get_header();
 	<div class="content-container content-container-gente">
   <div class="row">
   <div class="col-lg-12 la-gente">
+  <div class="arrows">
+    <div class="left-arrow-la-gente"> 
+      <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/prev-gente.svg">Átras
+    </div>
+    <div class="right-arrow-la-gente">
+    Siguiente<img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/next-gente.svg">
+    </div>
+  </div>
       
   <?php query_posts('post_type=gente&posts_per_page=5&orderby=date&order=ASC');?>
   

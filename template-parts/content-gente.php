@@ -18,4 +18,8 @@
 	<div class="group-content">
 		<?php the_content(); ?>
 	</div>
+
+	<div class="subir-gente"> 
+  	<img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/arrow-up.svg"> <span >Subir</span> 
+	</div>
 </div>
