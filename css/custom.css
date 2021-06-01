@@ -633,7 +633,7 @@ footer {
 }
 
 .la-gente-galeria .grupo {
-  padding: 35px 35px 150px 35px;
+  padding: 35px 35px 100px 35px;
   overflow-y: scroll;
   width: 100%;
 }
@@ -710,6 +710,7 @@ footer.hidden {
   display: flex;
   float: right;
   margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 

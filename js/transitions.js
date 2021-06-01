@@ -6,7 +6,17 @@
     const galeriaContainer = document.querySelector(".la-gente-galeria")
     const subirGenteTags = document.querySelectorAll(".subir-gente")
 
-    console.log(subirGenteTags)
+    if (subirGenteTags.length > 0) {
+
+      subirGenteTags.forEach(tag => {
+
+        const parent = tag.parentElement
+        tag.addEventListener("click", () => {
+          parent.scrollTo({top: 0,behavior: "smooth"});
+        })
+      })
+    }
+
     if (circleTag) {
       document.addEventListener("scroll", function() {
         const pixels = Math.floor(window.pageYOffset)
@@ -32,6 +42,7 @@
     $('.galeria').slick({
       slidesToShow: 3.5,
       slidesToScroll: 1,
+      draggable: false,
       prevArrow: null,
       nextArrow: $('#objetos-next')
     });
@@ -39,6 +50,7 @@
     $('.la-gente-galeria').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
+      draggable: false,
       prevArrow: $('.left-arrow-la-gente'),
       nextArrow: $('.right-arrow-la-gente')
     });
