@@ -1,11 +1,10 @@
 (function ($, root, undefined) {
   const runScripts = () => {
 
-    const genteMainFooter = document.querySelector(".page-id-297 .site-footer")
     const circleTag = document.querySelector(".fixed-circle")
     const upBtnTag = document.querySelector(".subir")
+    const galeriaContainer = document.querySelector(".la-gente-galeria")
 
-    genteMainFooter.style.visibility = "hidden"
     
     if (circleTag) {
       document.addEventListener("scroll", function() {
@@ -38,11 +37,17 @@
 
     $('.la-gente-galeria').slick({
       slidesToShow: 3,
-      initialSlide: 1,
       slidesToScroll: 1,
       prevArrow: null,
       nextArrow: null
     });
+
+    if (galeriaContainer) { 
+      const top = galeriaContainer.getBoundingClientRect().top
+      const wHeight = window.innerHeight
+      galeriaContainer.setAttribute('style', `height:${wHeight - top - 45}px;`);
+      document.documentElement.style.setProperty('--galeria', `${wHeight - top -45}px`);
+    }
   
   }
 

@@ -17,7 +17,7 @@ get_header();
 	<main id="primary" class="site-main single-main" data-barba="container" data-barba-namespace="single">
 	<div class="content-container content-container-gente">
   <div class="row">
-  <div class="col-lg-11 col-lg-offset-1 la-gente">
+  <div class="col-lg-12 la-gente">
       
   <?php query_posts('post_type=gente&posts_per_page=5&orderby=date&order=ASC');?>
   

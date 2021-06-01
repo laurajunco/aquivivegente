@@ -604,6 +604,14 @@ footer {
   min-height: 0;
 }
 
+.content-container.content-container-gente p {
+  max-width: 100%;
+}
+
+.la-gente-galeria,  .la-gente-galeria .grupo {
+  height: var(--galeria);
+}
+
 .la-gente {
   padding: 0;
 }
@@ -613,14 +621,35 @@ footer {
 }
 
 .la-gente-galeria .grupo {
-  min-height: 80vh;
   padding: 35px;
   overflow-y: scroll;
-  height: 60vh;
 }
 
 .grupo::-webkit-scrollbar {
     display: none;
+}
+
+.grupo .group-title {
+  text-align: center;
+  padding: 40px 40px 80px 40px;
+}
+
+.group-title h3 {
+  font-family: "Sora", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.group-title p {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px 0 0 0;
+  max-width: 100%;
+}
+
+.page-id-297 {
+  overflow-y: hidden;
 }
 
 /* TIPOGRAFIA */
