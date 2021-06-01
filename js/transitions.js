@@ -42,13 +42,15 @@
       nextArrow: null
     });
 
-    if (galeriaContainer) { 
-      const top = galeriaContainer.getBoundingClientRect().top
-      const wHeight = window.innerHeight
-      galeriaContainer.setAttribute('style', `height:${wHeight - top}px;`);
-      document.documentElement.style.setProperty('--galeria', `${wHeight - top}px`);
-    }
-  
+    document.addEventListener("DOMContentLoaded", function(){
+      if (galeriaContainer) { 
+        const top = galeriaContainer.getBoundingClientRect().top
+        const wHeight = window.innerHeight
+        console.log(top, wHeight)
+        document.documentElement.style.setProperty('--galeria', `${wHeight - top}px`);
+      }
+    });
+
   }
 
   runScripts()
@@ -96,7 +98,6 @@
     const href = next.url.href
 
     if (next.url.path === "/gente/") {
-      console.log("gente!")
       document.querySelector("body").classList.add("y-hidden")
       document.querySelector("footer").classList.add("hidden")
     } else {

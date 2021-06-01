@@ -609,8 +609,17 @@ footer {
   line-height: 1.4;
 }
 
+.la-gente-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0 0 0;
+  overflow-x: scroll;
+}
+
+.la-gente-galeria.slick-slider {
+  display: block;
+}
+
 .la-gente-galeria,  .la-gente-galeria .grupo {
-  height: 60vh;
   height: var(--galeria);
 }
 
@@ -625,6 +634,8 @@ footer {
 .la-gente-galeria .grupo {
   padding: 35px 35px 150px 35px;
   overflow-y: scroll;
+  width: 100%;
+  transition: width 1s;
 }
 
 .grupo::-webkit-scrollbar {
