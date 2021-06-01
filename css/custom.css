@@ -606,9 +606,11 @@ footer {
 
 .content-container.content-container-gente p {
   max-width: 100%;
+  line-height: 1.4;
 }
 
 .la-gente-galeria,  .la-gente-galeria .grupo {
+  height: 60vh;
   height: var(--galeria);
 }
 
@@ -621,7 +623,7 @@ footer {
 }
 
 .la-gente-galeria .grupo {
-  padding: 35px;
+  padding: 35px 35px 150px 35px;
   overflow-y: scroll;
 }
 
@@ -651,6 +653,25 @@ footer {
 .page-id-297 {
   overflow-y: hidden;
 }
+
+.group-content img {
+  width: 100%;
+  margin: 35px 0 35px 0;
+}
+
+.group-content .underline {
+  text-decoration: underline;
+}
+
+.group-content .big {
+  font-size: 20px;
+}
+
+.group-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
 
 /* TIPOGRAFIA */
 @font-face {
