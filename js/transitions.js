@@ -119,6 +119,12 @@
   }
 
   const selectNav = (next) => {
+
+    if (next.url.path === "/gente/") {
+      document.querySelector("footer").classList.add("hidden")
+    } else {
+      document.querySelector("footer").classList.remove("hidden")
+    }
     
     const headerLinks = document.querySelectorAll(".menu .menu-item a")
     const href = next.url.href
