@@ -495,13 +495,21 @@ footer {
 .galeria {
   margin-top: 80px;
 }
+
 .slick-slide {
   margin: 10px;
 }
 
-.slick-next span, 
-.slick-next img {
+.slick-carrusel-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.slick-carrusel-arrows img {
   cursor: pointer;
+  width: 18px;
 }
 
 .slick-next img {

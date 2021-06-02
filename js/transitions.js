@@ -34,7 +34,7 @@
       slidesToShow: 3.5,
       slidesToScroll: 1,
       draggable: false,
-      prevArrow: null,
+      prevArrow: $('#objetos-prev'),
       nextArrow: $('#objetos-next')
     });
 
