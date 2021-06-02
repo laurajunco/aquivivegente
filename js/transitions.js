@@ -4,19 +4,8 @@
     const circleTag = document.querySelector(".fixed-circle")
     const upBtnTag = document.querySelector(".subir")
     const galeriaContainer = document.querySelector(".la-gente-galeria")
-    const subirGenteTags = document.querySelectorAll(".subir-gente")
-
-    if (subirGenteTags.length > 0) {
-
-      subirGenteTags.forEach(tag => {
-
-        const parent = tag.parentElement
-        tag.addEventListener("click", () => {
-          parent.scrollTo({top: 0,behavior: "smooth"});
-        })
-      })
-    }
-
+ 
+    /* Circulo odeón */
     if (circleTag) {
       document.addEventListener("scroll", function() {
         const pixels = Math.floor(window.pageYOffset)
@@ -24,6 +13,7 @@
       })
     }
     
+    /* Subir */
     if (upBtnTag) {
       upBtnTag.addEventListener("click", function() {
         window.scrollTo({top: 0,behavior: "smooth"});
@@ -39,6 +29,7 @@
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
     
+    /* galeria carrousel */
     $('.galeria').slick({
       slidesToShow: 3.5,
       slidesToScroll: 1,
@@ -47,6 +38,20 @@
       nextArrow: $('#objetos-next')
     });
 
+    /* lsubir la gente */
+    $('.la-gente-galeria').on('init', function(slick){
+      const slickClones = document.querySelectorAll(".slick-cloned")
+      slickClones.forEach(clone => {
+        const grupo = clone.querySelector(".grupo")
+        const subirTag = clone.querySelector(".subir-gente")
+
+        subirTag.addEventListener("click", () => {
+          grupo.scrollTo({top: 0,behavior: "smooth"});
+        })
+      })
+    });
+
+    /* la gente carrousel */
     $('.la-gente-galeria').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -55,7 +60,16 @@
       nextArrow: $('.right-arrow-la-gente')
     });
 
+    /* galeria height */
     document.addEventListener("DOMContentLoaded", function(){
+      if (galeriaContainer) { 
+        const top = galeriaContainer.getBoundingClientRect().top
+        const wHeight = window.innerHeight
+        document.documentElement.style.setProperty('--galeria', `${wHeight - top}px`);
+      }
+    });
+
+    window.addEventListener('resize', () => {
       if (galeriaContainer) { 
         const top = galeriaContainer.getBoundingClientRect().top
         const wHeight = window.innerHeight
@@ -109,13 +123,6 @@
     const headerLinks = document.querySelectorAll(".menu .menu-item a")
     const href = next.url.href
 
-    if (next.url.path === "/gente/") {
-      document.querySelector("body").classList.add("y-hidden")
-      document.querySelector("footer").classList.add("hidden")
-    } else {
-      document.querySelector("body").classList.remove("y-hidden")
-      document.querySelector("footer").classList.remove("hidden")
-    }
     headerLinks.forEach(link => {
       if(link.getAttribute("href") === href) {
         link.parentNode.classList.add("current-menu-item")
@@ -126,3 +133,12 @@
   }
 
 })(jQuery, this);  
+
+
+// if (next.url.path === "/gente/") {
+//   // document.querySelector("body").classList.add("y-hidden")
+//   // document.querySelector("footer").classList.add("hidden")
+// } else {
+//   // document.querySelector("body").classList.remove("y-hidden")
+//   // document.querySelector("footer").classList.remove("hidden")
+// }

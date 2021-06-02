@@ -669,9 +669,9 @@ footer {
   overflow-y: hidden;
 }
 
-footer.hidden {
+/* footer.hidden {
   display: none;
-}
+} */
 
 .group-content img {
   width: 100%;
