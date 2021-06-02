@@ -322,7 +322,7 @@ h3 {
 
 .objetos .card-container:nth-child(14) {
   margin-top: 7vh;
-  margin-bottom: 7vh;
+  margin-bottom: 10vh;
 }
 
 /* FOOTER */
@@ -476,12 +476,22 @@ footer {
   top: 40px;
 }
 
+.antecedentes .content,
+.cartografia .content {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+}
+
 .insta-video iframe {
   margin-left: auto !important;
     margin-right: auto !important;
 }
 
 /* GALERIA */
+.antecedentes .galeria {
+  margin-top: 140px;
+}
 .galeria {
   margin-top: 80px;
 }
