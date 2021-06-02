@@ -40,7 +40,7 @@
 
     /* lsubir la gente */
     $('.la-gente-galeria').on('init', function(slick){
-      const slickClones = document.querySelectorAll(".slick-cloned")
+      const slickClones = document.querySelectorAll(".slick-slide")
       slickClones.forEach(clone => {
         const grupo = clone.querySelector(".grupo")
         const subirTag = clone.querySelector(".subir-gente")
