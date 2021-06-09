@@ -51,7 +51,7 @@ h3.entrar a {
   text-align: center;
   font-family: "Sora", sans-serif;
   font-weight: bold;
-  font-size: 52px;
+  font-size: 4vw;
   line-height: 1;
   margin-bottom: 0;
   margin-top: 0;
@@ -70,9 +70,15 @@ h3.entrar a {
   justify-content: center;
 }
 
+@media (max-width: 900px) {
+  .home h1 {
+    font-size: 5vw;
+  }
+}
+
 @media (max-width: 550px) {
   .home h1 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   body.home {
@@ -84,7 +90,7 @@ h3.entrar a {
 
 @media (max-width: 330px) {
   h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   body.home {
