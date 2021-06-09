@@ -38,7 +38,7 @@
       nextArrow: $('#objetos-next')
     });
 
-    /* lsubir la gente */
+    /* subir la gente */
     $('.la-gente-galeria').on('init', function(slick){
       const slickClones = document.querySelectorAll(".slick-slide")
       slickClones.forEach(clone => {
@@ -59,24 +59,6 @@
       prevArrow: $('.left-arrow-la-gente'),
       nextArrow: $('.right-arrow-la-gente')
     });
-
-    /* galeria height */
-    document.addEventListener("DOMContentLoaded", function(){
-      if (galeriaContainer) { 
-        const top = galeriaContainer.getBoundingClientRect().top
-        const wHeight = window.innerHeight
-        document.documentElement.style.setProperty('--galeria', `${wHeight - top}px`);
-      }
-    });
-
-    window.addEventListener('resize', () => {
-      if (galeriaContainer) { 
-        const top = galeriaContainer.getBoundingClientRect().top
-        const wHeight = window.innerHeight
-        document.documentElement.style.setProperty('--galeria', `${wHeight - top}px`);
-      }
-    });
-
   }
 
   runScripts()
@@ -120,12 +102,6 @@
 
   const selectNav = (next) => {
 
-    if (next.url.path === "/gente/") {
-      document.querySelector("footer").classList.add("hidden")
-    } else {
-      document.querySelector("footer").classList.remove("hidden")
-    }
-    
     const headerLinks = document.querySelectorAll(".menu .menu-item a")
     const href = next.url.href
 

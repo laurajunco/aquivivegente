@@ -640,7 +640,7 @@ footer {
 }
 
 .la-gente-galeria,  .la-gente-galeria .grupo {
-  height: var(--galeria);
+  height: calc(100vh - 60px);
   overflow: hidden;
 }
 
