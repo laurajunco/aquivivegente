@@ -86,7 +86,7 @@ h3 {
   width: 100%;
   z-index: -1;
   object-fit: cover;
-  object-position: top center;
+  object-position: top left;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   transition: opacity 0.2s ;
@@ -123,7 +123,7 @@ h3 {
   list-style: none;
   display: inline-block;
   position: fixed;
-  bottom: 10vh;
+  bottom: 2vh;
   left: 3%;
   padding: 10px;
   background-color: white;
@@ -264,7 +264,8 @@ h3 {
 .objetos-container {
   padding: 75px 50px 0 25px;
   background-image: url('../assets/malla.svg');
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
 
 .objetos .card.horizontal {
@@ -532,14 +533,16 @@ footer {
   transform: translate(5%, 50%) rotate(-90deg);
   transform-origin: 100% 0%;
   margin: 0;
-  max-width: 30vh;
+  max-width: 350px;
   text-align: end;
   margin-top: 90px;
+  position: relative;
+  top: 3.5vh;
 }
 
 .telas .sidebar p,
 .cocina .sidebar p {
-  transform: translate(0, 50%) rotate(-90deg);
+  transform: translate(0, 30%) rotate(-90deg);
 }
 
 .subir {
