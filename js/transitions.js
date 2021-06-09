@@ -32,13 +32,22 @@
     /* galeria carrousel */
     $('.galeria').slick({
       slidesToShow: 3.5,
-      slidesToScroll: 1
+      slidesToScroll: 1,
       prevArrow: $('#objetos-prev'),
       nextArrow: $('#objetos-next')
     });
 
+    $('.galeria').on('mousewheel', function(e) {
+      const deltaX = e.originalEvent.deltaX
+      if (deltaX > 10) {
+        $('.galeria').slick('slickNext');
+      } else if (deltaX < -10){
+        $('.galeria').slick('slickPrev');
+      }
+    });
+
     /* subir la gente */
-    $('.la-gente-galeria').on('init', function(slick){
+    $('.la-gente-galeria').on('init', function() {
       const slickClones = document.querySelectorAll(".slick-slide")
       slickClones.forEach(clone => {
         const grupo = clone.querySelector(".grupo")
@@ -54,8 +63,19 @@
     $('.la-gente-galeria').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
+      swipe: true, 
+      touchMove: true,
       prevArrow: $('.left-arrow-la-gente'),
       nextArrow: $('.right-arrow-la-gente')
+    });
+
+    $('.la-gente-galeria').on('mousewheel', function(e) {
+      const deltaX = e.originalEvent.deltaX
+      if (deltaX > 10) {
+        $('.la-gente-galeria').slick('slickNext');
+      } else if (deltaX < -10){
+        $('.la-gente-galeria').slick('slickPrev');
+      }
     });
   }
 
