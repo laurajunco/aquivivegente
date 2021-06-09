@@ -20,10 +20,12 @@ get_header();
   <div class="col-lg-12 la-gente">
   <div class="arrows">
     <div class="left-arrow-la-gente"> 
-      <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/prev-gente.svg">Átras
+      <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/prev-arrow.svg">
+      <strong>Átras </strong>
     </div>
     <div class="right-arrow-la-gente">
-    Siguiente<img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/next-gente.svg">
+    <strong>Siguiente</strong>
+    <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/next-arrow.svg">
     </div>
   </div>
       

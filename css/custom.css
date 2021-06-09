@@ -731,6 +731,12 @@ footer.hidden {
   cursor: pointer;
 }
 
+.la-gente .arrows div {
+  display: flex;
+  background-color: white;
+  padding: 5px;
+}
+
 .arrows img {
   margin: 0 10px;
   width: 20px;
