@@ -32,8 +32,7 @@
     /* galeria carrousel */
     $('.galeria').slick({
       slidesToShow: 3.5,
-      slidesToScroll: 1,
-      draggable: false,
+      slidesToScroll: 1
       prevArrow: $('#objetos-prev'),
       nextArrow: $('#objetos-next')
     });
@@ -55,7 +54,6 @@
     $('.la-gente-galeria').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      draggable: false,
       prevArrow: $('.left-arrow-la-gente'),
       nextArrow: $('.right-arrow-la-gente')
     });
@@ -116,11 +114,3 @@
 
 })(jQuery, this);  
 
-
-// if (next.url.path === "/gente/") {
-//   // document.querySelector("body").classList.add("y-hidden")
-//   // document.querySelector("footer").classList.add("hidden")
-// } else {
-//   // document.querySelector("body").classList.remove("y-hidden")
-//   // document.querySelector("footer").classList.remove("hidden")
-// }
