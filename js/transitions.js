@@ -16,6 +16,7 @@
     /* Subir */
     if (upBtnTag) {
       upBtnTag.addEventListener("click", function() {
+        console.log("Up")
         window.scrollTo({top: 0,behavior: "smooth"});
       })
     }
