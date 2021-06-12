@@ -1,4 +1,4 @@
-<div class="col-lg-5 media-col">   
+<div class="col-lg-5 media-col col-md-9 col-md-offset-1">   
   <?php if( get_field('img1') ): ?>
     <div class="img-container">
         <img class="grilla" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/grilla_morada.svg" alt="">

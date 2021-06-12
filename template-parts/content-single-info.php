@@ -1,4 +1,4 @@
-  <div class="col-lg-5 media-col sticky">
+  <div class="col-lg-5 media-col sticky col-md-9 col-md-offset-1">
     
     <?php if( get_field('img1') ): ?>
       <div class="img-container">
