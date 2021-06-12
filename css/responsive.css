@@ -1,16 +1,44 @@
-@media (max-width: 800px) {
+:root {
+  --extra-large: 1300px;
+  --large: 1000px;
+  --medium: 992px;
+  --small: 768px;
+  --extra-small: 550px;
+}
 
-  .hide-on-small {
-    display: none;
+@media (max-width: 1200px) {
+  .card.telas {
+    flex-direction: column;
   }
 
-  .show-on-small {
-    display: block;
+  .card-container {
+    padding: 15px;
+  }
+
+  .card.cartografia {
+    margin-top: 40%;
+  }
+
+  .card.objetos {
+    margin-top: 10%;
+  }
+
+  .card.cocina {
+    margin-top: 35%;
   }
 }
 
-@media (min-width: 800px) {
+@media (max-width: 992px) {
+  .hide-on-small {
+    display: none;
+  }
+  .show-on-small {
+    display: block;
+  }
 
+}
+
+@media (min-width: 992px) {
   .hide-on-small {
     display: block;
   }

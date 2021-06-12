@@ -232,6 +232,11 @@ h3 {
   flex-direction: row;
 } 
 
+.card.telas img {
+  object-fit: cover;
+  object-position: 36% center;
+}
+
 .card.residencia {
   margin-top: -10%
 } 
