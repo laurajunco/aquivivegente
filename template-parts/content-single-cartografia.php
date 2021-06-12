@@ -1,4 +1,4 @@
-<div class="col-lg-5 media-col col-md-9 col-md-offset-1">
+<div class="col-lg-5 col-lg-offset-0 media-col col-md-9 col-md-offset-1">
 
   <?php if( get_field('video1') ): ?>
     <div class="video-container">

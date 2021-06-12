@@ -1,4 +1,4 @@
-<div class="col-lg-5 media-col col-md-9 col-md-offset-1">
+<div class="col-lg-5 col-lg-offset-0  col-md-9 col-md-offset-1">
   
   <?php if( get_field('img1') ): ?>
     <div class="img-container">
