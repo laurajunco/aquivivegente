@@ -498,6 +498,10 @@ footer {
   margin: 10px;
 }
 
+.slick-slide img {
+  width: 100%;
+}
+
 .slick-carrusel-arrows {
   display: flex;
   align-items: center;
