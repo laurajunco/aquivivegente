@@ -1,0 +1,21 @@
+@media (max-width: 800px) {
+
+  .hide-on-small {
+    display: none;
+  }
+
+  .show-on-small {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .hide-on-small {
+    display: block;
+  }
+
+  .show-on-small {
+    display: none;
+  }
+}
