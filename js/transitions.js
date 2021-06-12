@@ -8,6 +8,7 @@
     /* Modal */
     $('.open-modal').on('click', function() {
       $('.modal-img-content').html($(this).html());  
+      $('footer').hide();
       $('.modal-img').show();
       $('html').css('overflow', 'hidden');
       return false;
@@ -16,12 +17,14 @@
     $('.open-modal-obj').on('click', function() {
       $('.modal-img-content').html($(this).find("img")[0]);  
       $('.modal-img').show();
+      $('footer').hide();
       $('html').css('overflow', 'hidden');
       return false;
     })
 
     $('.modal-img-close, .modal-img-background, .modal-img-content').on('click', function() {
       $('.modal-img').hide();
+      $('footer').show();
       $('html').css('overflow', 'auto');
       return false;
     })
