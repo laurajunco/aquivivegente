@@ -22,7 +22,7 @@
   }
 
   .card-container {
-    padding: 15px;
+    padding: 20px;
   }
 
   .card.cartografia {
@@ -41,15 +41,48 @@
     padding: 40px 40px 150px 40px;
   }
 
+  .content-container.content-container-gente {
+    padding-right: 0;
+  }
+
   .content {
     margin-bottom: 5vh;
   }
 
   .antecedentes .content,
-.cartografia .content {
-  position: relative;
-  top: 0;
-}
+  .cartografia .content {
+    position: relative;
+    top: 0;
+  } 
+
+  .objetos .card.horizontal {
+    flex-direction: column;
+  }
+
+  .objetos .card-container {
+    transform: translate(0, 0) !important;
+  }
+
+  .objetos-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .objetos-container .card-container img {
+    max-height: 250px;
+    object-position: top center;
+  }
+
+  .objetos .card-container:nth-child(2) {
+    margin-top: 3vh;
+  }
+
+  .objetos .card-container:nth-child(4) {
+    margin-top: -3vh;
+    margin-bottom: 2vh;
+  }
+
+
 }
 
 @media (max-width: 992px) {
