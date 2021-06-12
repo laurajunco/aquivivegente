@@ -45,5 +45,6 @@
   <div class="modal-img-close">
     <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/close.svg">
   </div>
-  <div class="modal-img-content"></div>
+  <div class="modal-img-content">
+  </div>
 </div>

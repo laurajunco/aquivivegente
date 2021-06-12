@@ -3,8 +3,22 @@
 
     const circleTag = document.querySelector(".fixed-circle")
     const upBtnTag = document.querySelector(".subir")
-    const galeriaContainer = document.querySelector(".la-gente-galeria")
+
  
+    /* Modal */
+    $('.open-modal').on('click', function() {
+      $('.modal-img-content').html($(this).html());  
+      $('.modal-img').show();
+      $('html').css('overflow', 'hidden');
+      return false;
+    })
+
+    $('.modal-img-close, .modal-img-background, .modal-img-content').on('click', function() {
+      $('.modal-img').hide();
+      $('html').css('overflow', 'auto');
+      return false;
+    })
+
     /* Circulo odeón */
     if (circleTag) {
       document.addEventListener("scroll", function() {
@@ -16,7 +30,6 @@
     /* Subir */
     if (upBtnTag) {
       upBtnTag.addEventListener("click", function() {
-        console.log("Up")
         window.scrollTo({top: 0,behavior: "smooth"});
       })
     }
