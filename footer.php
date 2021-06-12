@@ -11,6 +11,12 @@
 
 ?>
 
+	<div class="modal">
+		<div class="modal-background"></div>
+		<div class="modal-close">Cerrar</div>
+		<div class="modal-content"></div>
+	</div>
+
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 		<p>
