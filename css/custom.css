@@ -775,6 +775,26 @@ footer.hidden {
   margin-top: 0;
 }
 
+/* Modal */
+.modal-img {
+  z-index: 3;
+}
+.modal-img-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-img-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 50px;
+}
+
 /* TIPOGRAFIA */
 @font-face {
   font-family: "Sora";
