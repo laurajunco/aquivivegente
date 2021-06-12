@@ -60,18 +60,42 @@
 <div class="row">
 <?php $galeria = get_field('galeria');?>
   <div class="col-lg-10 col-lg-offset-1 galeria">
-    <img class="img-galeria" src="<?php echo $galeria['img_1'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_2'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_3'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_4'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_5'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_6'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_7'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_8'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_9'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_10'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_11'] ?>" />
-    <img class="img-galeria" src="<?php echo $galeria['img_12'] ?>" />
+    <a href="<?php echo $galeria['img_1'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_1'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_2'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_2'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_3'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_3'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_4'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_4'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_5'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_5'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_6'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_6'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_7'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_7'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_8'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_8'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_9'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_9'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_10'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_10'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_11'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_11'] ?>" />
+    </a>
+    <a href="<?php echo $galeria['img_12'] ?>" class="open-modal"> 
+      <img class="img-galeria" src="<?php echo $galeria['img_12'] ?>" />
+    </a>
   </div>
 </div>
 
