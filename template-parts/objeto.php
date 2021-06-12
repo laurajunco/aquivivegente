@@ -30,6 +30,16 @@ get_header();
 
 </div>
 
+<div class="modal-img">
+  <div class="modal-img-background <?php the_field( 'color' ); ?>"></div>
+  <div class="modal-img-close">
+    <img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/close.svg">
+  </div>
+  <div class="modal-img-content">
+  </div>
+</div>
+
+
 	</main><!-- #main -->
 <?php
 

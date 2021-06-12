@@ -3,7 +3,9 @@
     <?php if( get_field('img1') ): ?>
       <div class="img-container">
           <img class="grilla" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/grilla_morada.svg" alt="">
-          <img class="img-content" src="<?php the_field('img1'); ?>" alt="">
+          <a href="#" class="open-modal"> 
+            <img class="img-content" src="<?php the_field('img1'); ?>" alt="">
+          </a>
       </div>
     <?php endif; ?>
 

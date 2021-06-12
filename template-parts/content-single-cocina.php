@@ -10,7 +10,7 @@
     <?php if( get_field('img1') ): ?>
       <div class="img-container m-top">
           <img class="grilla" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/grilla_amarilla_hor.svg" alt="">
-          <a href="<?php the_field('img1'); ?>" class="open-modal"> 
+          <a href="#" class="open-modal"> 
             <img class="img-content" src="<?php the_field('img1'); ?>" alt="">
           </a>
       </div>

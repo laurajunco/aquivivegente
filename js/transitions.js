@@ -13,6 +13,13 @@
       return false;
     })
 
+    $('.open-modal-obj').on('click', function() {
+      $('.modal-img-content').html($(this).find("img")[0]);  
+      $('.modal-img').show();
+      $('html').css('overflow', 'hidden');
+      return false;
+    })
+
     $('.modal-img-close, .modal-img-background, .modal-img-content').on('click', function() {
       $('.modal-img').hide();
       $('html').css('overflow', 'auto');

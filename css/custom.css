@@ -776,6 +776,10 @@ footer.hidden {
 }
 
 /* Modal */
+.open-modal-obj {
+  cursor: pointer;
+}
+
 .modal-img {
   z-index: 4;
   display: none;
