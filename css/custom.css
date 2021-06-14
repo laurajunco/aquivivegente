@@ -204,6 +204,12 @@ h3 {
   z-index: -1;
 }
 
+.circle-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 /* bootstrap edit */
 @media (min-width: 1200px) {
   .container {

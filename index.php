@@ -32,9 +32,12 @@ get_header();
 				endwhile;
 			endif;
 		?>
+		<div class="circle-container row">
+		<img class="fixed-circle" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/circulo_fixed.svg" alt="">
+		<img class="fixed-logo" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/logo_odeon.svg" alt="">
+	</div>
 	</section>
-	<img class="fixed-circle" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/circulo_fixed.svg" alt="">
-	<img class="fixed-logo" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/logo_odeon.svg" alt="">
+	
 </main><!-- #main -->
 
 <?php

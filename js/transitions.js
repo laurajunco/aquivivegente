@@ -45,7 +45,11 @@
     if (circleTag) {
       document.addEventListener("scroll", function() {
         const pixels = Math.floor(window.pageYOffset)
-        circleTag.style.transform = `translate(-50%, -50%) rotate(${pixels/10}deg)`
+        if (window.innerWidth > 767) {
+          circleTag.style.transform = `translate(-50%, -50%) rotate(${pixels/10}deg)`
+        } else {
+          circleTag.style.transform = `translate(0, 0) rotate(-109deg)`
+        }
       })
     }
     

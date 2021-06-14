@@ -256,7 +256,7 @@
 
 
 @media (max-width: 767px) {
-  .site-branding, .main-navigation {
+  .site-branding, .main-navigation, .sidebar {
     display: none;
   }
 
@@ -300,5 +300,28 @@
 
   .content-container {
     width: 100%;
+  }
+
+  .card-content {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .fixed-circle {
+    transform: translate(0, 0) rotate(0);
+    position: relative;
+    width: 90%;
+    height: 90%;
+    top: auto;
+    left: auto;
+    z-index: 3;
+  }
+
+  .fixed-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
   }
 }
