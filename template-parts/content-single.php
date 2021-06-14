@@ -9,12 +9,14 @@
 
 ?>
 
-
+<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 <div class="content-container <?php the_field( 'color' ); ?> <?php the_field( 'clase' ); ?>">
-
   <div class="row">
     <div class="col-lg-11 col-lg-offset-1">
       <h2><?php the_title(); ?></h2>
+      <?php if( get_field('img1') ): ?>
+        <p class="show-on-mobile colectivos"> <?php the_field( 'side-title' ); ?></p>
+      <?php endif; ?>
     </div>
   </div>
 

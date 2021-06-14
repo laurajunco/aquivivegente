@@ -256,6 +256,10 @@
 
 
 @media (max-width: 767px) {
+  .show-on-mobile {
+    display: block;
+  }
+  
   .site-branding, .main-navigation, .sidebar {
     display: none;
   }

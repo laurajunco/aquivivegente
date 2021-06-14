@@ -194,6 +194,14 @@ h3 {
   z-index: -1;
 }
 
+.show-on-mobile {
+  display: none;
+}
+
+.colectivos {
+  text-transform: uppercase;
+}
+
 .fixed-logo {
   width: 5vmin;
   height: auto;
