@@ -16,6 +16,17 @@
       }
       prevScrollpos = currentScrollPos;
     }
+
+    /* Menu mobile */
+    $('.burguer').on('click', function() {
+      console.log("menu-open")
+      $('.main-navigation-mobile').show();
+      return false;
+    })
+
+    $('.main-navigation-mobile, .close-mobile-menu').on('click', function() {
+      $('.main-navigation-mobile').hide();
+    })
  
     /* Modal */
     $('.open-modal').on('click', function() {

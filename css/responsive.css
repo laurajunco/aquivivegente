@@ -249,8 +249,8 @@
 }
 
 @media (min-width: 767px) {
-  .site-branding-mobile, .main-navigation-mobile {
-    display: none;
+  .site-branding-mobile {
+    display: none
   }
 
 }
@@ -276,10 +276,6 @@
 
   .site-branding-mobile .burguer {
     width: 60px;
-  }
-
-  .main-navigation-mobile {
-    display: block;
   }
 
   .burguer img {
