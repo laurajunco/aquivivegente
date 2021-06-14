@@ -78,6 +78,14 @@
     left: 2.5%
   }
 
+  .la-gente-galeria .grupo {
+    padding: 35px 35px 70px 35px;
+  }
+
+  .group-title h3 {
+    font-size: 30px;
+  }
+
   .card.telas {
     flex-direction: column;
   }

@@ -58,7 +58,15 @@
       slidesToShow: 3.5,
       slidesToScroll: 1,
       prevArrow: $('#objetos-prev'),
-      nextArrow: $('#objetos-next')
+      nextArrow: $('#objetos-next'),
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          }
+        }
+      ]
     });
 
     $('.galeria').on('mousewheel', function(e) {
@@ -90,7 +98,15 @@
       swipe: true, 
       touchMove: true,
       prevArrow: $('.left-arrow-la-gente'),
-      nextArrow: $('.right-arrow-la-gente')
+      nextArrow: $('.right-arrow-la-gente'),
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
     });
 
     $('.la-gente-galeria').on('mousewheel', function(e) {
