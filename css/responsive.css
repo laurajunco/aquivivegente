@@ -279,7 +279,7 @@
   }
 
   .burguer img {
-    width: 30px;
+    width: 25px;
   }
 
   .site-branding-mobile h1 {
@@ -377,4 +377,17 @@
     margin-bottom: 8vh;
   }
 
+  .arrows {
+    display: none;
+  }
+
+  .content-container-gente {
+    padding: 0;
+    margin-top: calc(-15vh + 60px);
+  }
+
+  .la-gente-galeria {
+    display: flex;
+    flex-direction: column;
+  }
 }

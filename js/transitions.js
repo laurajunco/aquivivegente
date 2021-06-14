@@ -98,6 +98,12 @@
           settings: {
             slidesToShow: 2.5,
           }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          }
         }
       ]
     });
@@ -138,6 +144,10 @@
           settings: {
             slidesToShow: 2,
           }
+        },
+        {
+          breakpoint: 767,
+          settings: "unslick"
         }
       ]
     });
