@@ -79,7 +79,7 @@
 }
 
 @media (max-width: 1200px) {
-  .menu {
+  .main-navigation .menu {
     left: 2.5%
   }
 
@@ -174,7 +174,7 @@
 }
 
 @media (min-width: 992px) {
-  .menu {
+  .main-navigation .menu {
     bottom: 4vh;
   }
 
@@ -249,7 +249,7 @@
 }
 
 @media (min-width: 767px) {
-  .site-branding-mobile {
+  .site-branding-mobile, .main-navigation-mobile {
     display: none;
   }
 
@@ -278,8 +278,12 @@
     width: 60px;
   }
 
+  .main-navigation-mobile {
+    display: block;
+  }
+
   .burguer img {
-    width: 40px;
+    width: 30px;
   }
 
   .site-branding-mobile h1 {

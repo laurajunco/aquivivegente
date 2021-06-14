@@ -139,7 +139,7 @@ h3 {
 }
 
 /* MENU */
-.menu {
+.main-navigation .menu {
   text-transform: uppercase;
   font-family: "Sora", sans-serif;
   font-weight: 500;
@@ -155,32 +155,76 @@ h3 {
   transform-origin: 0% 0%;
 }
 
-.menu li {
+.main-navigation .menu li {
   display: inline-block;
 }
 
-.menu a {
+.main-navigation .menu a {
   text-decoration: none;
   color: black;
 }
 
-.menu a:hover {
+.main-navigation .menu a:hover {
   text-decoration: underline;
 }
 
-.menu li::after {
+.main-navigation .menu li::after {
   content: "|";
   margin: 0 10px;
 }
 
-.menu li:last-child::after {
+.main-navigation .menu li:last-child::after {
   content: "";
   margin: 0;
 }
 
-.current-menu-item a {
+.main-navigation .current-menu-item a {
   color: blue;
   text-decoration: underline;
+}
+
+.main-navigation-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: blue;
+}
+
+.close-mobile-menu {
+  height: 60px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.close-mobile-menu img {
+  width: 30px;
+}
+
+.main-navigation-mobile .menu {
+  text-transform: uppercase;
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.main-navigation-mobile .menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-navigation-mobile .menu-item {
+  padding: 20px 0;
+  border-bottom: 1px solid white;
 }
 
 /* FIXED CIRCLE */
