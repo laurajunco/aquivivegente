@@ -3,7 +3,19 @@
 
     const circleTag = document.querySelector(".fixed-circle")
     const upBtnTag = document.querySelector(".subir")
+    const navBarTag = document.querySelector(".site-branding-mobile")
 
+    /* menu mobile */
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        navBarTag.style.top = "0";
+      } else {
+        navBarTag.style.top = "-60px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
  
     /* Modal */
     $('.open-modal').on('click', function() {

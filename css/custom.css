@@ -110,8 +110,32 @@ h3 {
   margin: 50px 50px 50px 80px;
 }
 
-.site-branding a {
+.site-branding a,  .site-branding-mobile a {
   color: black;
+}
+
+.site-branding-mobile {
+  background-color: white;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  cursor: pointer;
+  transition: top 0.3s;
+}
+
+.site-branding-mobile a {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.site-branding-mobile .burguer {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MENU */
@@ -368,7 +392,7 @@ footer {
 
 .site-info p {
   margin: 0;
-  line-height: 1;
+  line-height: 1.4;
   display: flex;
   align-items: center;
   text-align: center;

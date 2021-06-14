@@ -45,5 +45,15 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+		<div class="site-branding-mobile">
+		<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
+			<h1><?php bloginfo( 'name' )?></h1>
+		</a>
+		<div class="burguer">
+			<img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/burguer.svg">
+		</div>
+		</div>
+
 	</header><!-- #masthead -->
 <?php endif;?>

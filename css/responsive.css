@@ -248,16 +248,47 @@
 
 }
 
-@media (max-width: 768px) {
-  .menu {
+@media (min-width: 767px) {
+  .site-branding-mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .site-branding, .main-navigation {
     display: none;
   }
 
-  .blog h1,
-  .single h1 {
-    display: none;
+  .site-branding-mobile {
+    display: flex;
+    height: 60px;
   }
 
+  .site-branding-mobile .burguer {
+    width: 60px;
+  }
+
+  .burguer img {
+    width: 40px;
+  }
+
+  .site-branding-mobile h1 {
+    margin: 0;
+    padding: 0 0 0 10%;
+    text-align: left;
+    width: 100%;
+    font-size: 5vw;
+  }
+  
+  .site-main {
+    margin-top: 15vh;
+  }
+
+  .card-container {
+    padding: 0;
+  }
+  
   .card.residencia, .card.cartografia, .card.objetos, .card.cocina {
     margin-top: 0
   } 
