@@ -386,8 +386,36 @@
     margin-top: calc(-15vh + 60px);
   }
 
+  .la-gente-galeria, .la-gente-galeria .grupo {
+    overflow: visible;
+    height: auto;
+  }
+
   .la-gente-galeria {
     display: flex;
     flex-direction: column;
+  }
+
+  .la-gente-galeria .grupo {
+    padding: 0;
+  }
+
+  .subir-gente {
+    display: none;
+  }
+
+  .group-content {
+    height: 0;
+    display: none;
+  } 
+
+  .grupo .group-title {
+    padding: 0;
+    cursor: pointer;
+    height: calc((100vh - 55px) / 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
