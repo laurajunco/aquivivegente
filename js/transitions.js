@@ -160,6 +160,20 @@
         $('.la-gente-galeria').slick('slickPrev');
       }
     });
+
+    $('.la-gente-galeria .grupo').on('click', function() {
+      const content = $(this).find('.group-content');
+
+      if (content.hasClass("open")) {
+        console.log("close")
+        content.removeClass("open")
+        content.animate({maxHeight: "0px"})
+      } else {
+        console.log("open")
+        content.addClass("open")
+        content.animate({maxHeight: "8000px"})
+      }
+    });
   }
 
   runScripts()

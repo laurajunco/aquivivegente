@@ -405,8 +405,9 @@
   }
 
   .group-content {
-    height: 0;
-    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s;
   } 
 
   .grupo .group-title {
