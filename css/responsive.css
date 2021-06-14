@@ -6,15 +6,76 @@
   --extra-small: 550px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 
-  .menu {
-    left: 2.5%
+  body {
+    font-size: 16px;
   }
 
   .cards {
     max-width: 85%;
     margin-top: 3vh;
+  }
+
+  .grupo .group-title {
+    padding: 25px 25px 50px 25px;
+  }
+
+  .blog h1 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .la-gente-galeria .grupo {
+    padding: 25px 25px 80px 25px;
+  }
+
+  .group-title h3 {
+    font-size: 30px;
+  }
+
+  .content-container p {
+    font-size: 18px;
+  }
+
+  .sidebar p {
+    font-size: 14px;
+  }
+
+  .objetos .card.horizontal {
+    flex-direction: column;
+  }
+
+  .objetos-container {
+    padding: 35px 35px 0 35px;
+  }
+
+  .objetos-container .card-container img {
+    max-height: 250px;
+    object-position: top center;
+  }
+
+  .objetos .card-container:nth-child(1) {
+    margin-bottom: 7vh;
+    margin-top: 0;
+  }
+
+  .objetos .card-container:nth-child(3) {
+    margin-top: -3vh;
+  }
+
+  .objetos .card-container:nth-child(7) {
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    left: 2.5%
   }
 
   .card.telas {
@@ -92,35 +153,6 @@
   .objetos .card-container:nth-child(13) {
     margin-top: -8vh;
   }
-}
-
-@media (max-width: 1300px) {
-  .objetos .card.horizontal {
-    flex-direction: column;
-  }
-
-  .objetos-container {
-    padding: 35px 35px 0 35px;
-  }
-
-  .objetos-container .card-container img {
-    max-height: 250px;
-    object-position: top center;
-  }
-
-  .objetos .card-container:nth-child(1) {
-    margin-bottom: 7vh;
-    margin-top: 0;
-  }
-
-  .objetos .card-container:nth-child(3) {
-    margin-top: -3vh;
-  }
-
-  .objetos .card-container:nth-child(7) {
-    margin-top: 0;
-  }
-
 }
 
 @media (max-width: 992px) {
