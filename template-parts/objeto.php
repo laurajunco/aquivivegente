@@ -10,7 +10,7 @@ get_header();
 
 	<div class="content-container <?php the_field( 'color' ); ?> <?php the_field( 'clase' ); ?>">
 
-  <div class="row">
+  <div class="row hide-on-mobile">
     <div class="col-lg-11 col-lg-offset-1">
       <h2><?php the_title(); ?></h2>
     </div>

@@ -252,6 +252,7 @@
   .site-branding-mobile {
     display: none;
   }
+
 }
 
 
@@ -259,7 +260,11 @@
   .show-on-mobile {
     display: block;
   }
-  
+
+  .hide-on-mobile {
+    display: none;
+  }
+
   .site-branding, .main-navigation, .sidebar {
     display: none;
   }
@@ -328,4 +333,44 @@
     transform: translate(-50%, -50%);
     z-index: 3;
   }
+
+  .content-title h2 {
+    font-size: 34px;
+    margin: 0 0 8px 0;
+  }
+
+  .content-title .colectivos {
+    width: 100%;
+  }
+
+  .content-title {
+    margin-bottom: 40px;
+  }
+
+  .content-container {
+  padding: 40px 20px 160px 20px;
+  }
+
+  .content-container p {
+    max-width: 100%;
+  }
+
+  .m-top {
+    margin-top: 80px;
+  }
+
+  .content-link {
+    margin-top: 40px;
+  }
+
+  .objetos-container {
+    background-size: 245%;
+    padding: 7% 7% 0 7%;
+  }
+
+  .objetos .card-container:nth-child(-n+13) {
+    margin-bottom: 4vh;
+    margin-top: 0;
+  }
+
 }

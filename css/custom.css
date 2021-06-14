@@ -423,6 +423,12 @@ footer {
   position: relative;
 }
 
+.header-img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -3px;
+}
+
 .content-container p {
   font-size: 20px;
   line-height: 1.5;
