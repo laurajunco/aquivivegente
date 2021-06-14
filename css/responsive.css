@@ -373,4 +373,8 @@
     margin-top: 0;
   }
 
+  .circle-container.row {
+    margin-bottom: 8vh;
+  }
+
 }
