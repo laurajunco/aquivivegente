@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="card-container col col-lg-<?php the_field( 'columnas' ); ?> col-lg-offset-<?php the_field( 'offset' );?> col-md-6 col-md-offset-0" > 
+<div class="card-container col col-lg-<?php the_field( 'columnas' ); ?> col-lg-offset-<?php the_field( 'offset' );?> col-md-6 col-md-offset-0 col-sm-6" > 
 	<div class="open-modal-obj card <?php the_field( 'color' ); ?> <?php the_field( 'clase' ); ?> <?php the_field( 'orientacion' ); ?>">
 	
 		<img src=<?php the_field( 'img' ); ?> class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">

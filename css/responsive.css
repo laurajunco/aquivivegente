@@ -21,7 +21,8 @@
     padding: 25px 25px 50px 25px;
   }
 
-  .blog h1 {
+  .blog h1,
+  .single h1 {
     font-size: 48px;
   }
 
@@ -47,6 +48,10 @@
 
   .objetos .card.horizontal {
     flex-direction: column;
+  }
+
+  .card-content p {
+    max-width: 95%;
   }
 
   .objetos-container {
@@ -76,6 +81,11 @@
 @media (max-width: 1200px) {
   .menu {
     left: 2.5%
+  }
+
+  .content-container .card-container p {
+    font-size: 14px;
+    max-width: 100%;
   }
 
   .la-gente-galeria .grupo {
@@ -163,6 +173,20 @@
   }
 }
 
+@media (min-width: 992px) {
+  .menu {
+    bottom: 4vh;
+  }
+
+  .hide-on-small {
+    display: block;
+  }
+
+  .show-on-small {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .hide-on-small {
     display: none;
@@ -171,14 +195,55 @@
     display: block;
   }
 
-}
-
-@media (min-width: 992px) {
-  .hide-on-small {
-    display: block;
+  .blog h1,
+  .single h1 {
+    font-size: 42px;
+    margin: 40px 40px 80px 70px;
   }
 
-  .show-on-small {
+  .sidebar p {
     display: none;
   }
+
+  .card-container {
+    padding: 10px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .content-container {
+    margin: 0vh 0 0 auto;
+  }
+
+  .cards {
+    max-width: 80%;
+    margin-top: 0vh;
+  }
+
+  .media-col, .galeria, .slick-carrusel-arrows {
+    max-width: 90%;
+  }
+
+  .subir {
+    margin-right: 0;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .la-gente-galeria .grupo {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .content-container p {
+    font-size: 16px;
+  }
+
+  .content-container.programacion p {
+    margin-bottom: 20px;
+  }
+
 }
