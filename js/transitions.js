@@ -161,19 +161,28 @@
       }
     });
 
-    $('.la-gente-galeria .grupo').on('click', function() {
-      const content = $(this).find('.group-content');
+    /* acordeon la gente mobile */
+    $('.la-gente-galeria .group-title').on('click', function() {
+      const parent = $(this).parent();
+      const content = parent.find('.group-content');
 
-      if (content.hasClass("open")) {
-        console.log("close")
-        content.removeClass("open")
+      if (parent.hasClass("open")) {
+        parent.removeClass("open")
         content.animate({maxHeight: "0px"})
       } else {
-        console.log("open")
-        content.addClass("open")
+        parent.addClass("open")
         content.animate({maxHeight: "8000px"})
       }
     });
+
+    /* subir galeria la gente mobile */
+    const gruposGaleria = document.querySelectorAll(".la-gente .grupo")
+      gruposGaleria.forEach( grupo => {
+        const subirTag = grupo.querySelector(".subir-gente")
+        subirTag.addEventListener("click", () => {
+          window.scrollTo({top: grupo.offsetTop ,behavior: "smooth"});
+        })
+      })
   }
 
   runScripts()

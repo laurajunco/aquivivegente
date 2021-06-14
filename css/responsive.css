@@ -400,14 +400,21 @@
     padding: 0;
   }
 
+  .la-gente-galeria .grupo.open .subir-gente {
+    display: block;
+  }
+
   .subir-gente {
     display: none;
+    margin-right: 5%;
   }
 
   .group-content {
     max-height: 0px;
     overflow: hidden;
     transition: all 1s;
+    max-width: 90%;
+    margin: 0 auto;
   } 
 
   .grupo .group-title {
