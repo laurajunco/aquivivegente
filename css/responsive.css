@@ -247,3 +247,27 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .blog h1,
+  .single h1 {
+    display: none;
+  }
+
+  .card.residencia, .card.cartografia, .card.objetos, .card.cocina {
+    margin-top: 0
+  } 
+
+  .card-container {
+    margin-bottom: 4vh;
+    transform: none;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+}
