@@ -85,7 +85,7 @@
     
     /* galeria carrousel */
     $('.galeria').slick({
-      slidesToShow: 3.5,
+      slidesToShow: 3,
       slidesToScroll: 1,
       prevArrow: $('#objetos-prev'),
       nextArrow: $('#objetos-next'),
@@ -98,12 +98,6 @@
         },
         {
           breakpoint: 992,
-          settings: {
-            slidesToShow: 2.5,
-          }
-        },
-        {
-          breakpoint: 767,
           settings: {
             slidesToShow: 2,
           }
@@ -135,7 +129,7 @@
 
     /* la gente carrousel */
     $('.la-gente-galeria').slick({
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       swipe: true, 
       touchMove: true,
