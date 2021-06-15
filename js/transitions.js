@@ -19,7 +19,6 @@
 
     /* Menu mobile */
     $('.burguer').on('click', function() {
-      console.log("menu-open")
       $('.main-navigation-mobile').show();
       return false;
     })
@@ -30,28 +29,37 @@
  
     /* Modal */
     $('.open-modal').on('click', function() {
+      console.log('open')
       $('.modal-img-content').html($(this).html());  
       $('footer').hide();
-      $('.site-branding-mobile').hide();
       $('.modal-img').show();
       $('html').css('overflow', 'hidden');
+      if (window.innerWidth <= 767){
+        $('.site-branding-mobile').hide();
+      }
       return false;
     })
 
     $('.open-modal-obj').on('click', function() {
+      const currentHtml = $(this).html()
       $('.modal-img-content').html($(this).find("img")[0]);  
+      $(this).html(currentHtml)
       $('.modal-img').show();
-      $('.site-branding-mobile').hide();
       $('footer').hide();
       $('html').css('overflow', 'hidden');
+      if (window.innerWidth <= 767){
+        $('.site-branding-mobile').hide();
+      }
       return false;
     })
 
     $('.modal-img-close, .modal-img-background, .modal-img-content').on('click', function() {
       $('.modal-img').hide();
       $('footer').show();
-      $('.site-branding-mobile').show();
       $('html').css('overflow', 'auto');
+      if (window.innerWidth <= 767){
+        $('.site-branding-mobile').show();
+      }
       return false;
     })
 
@@ -215,6 +223,19 @@
         beforeLeave() {
           bodyTag.classList.remove("single");
           bodyTag.classList.add("blog");
+        }
+      },
+      {
+        namespace: "gente",
+        beforeEnter() {
+          bodyTag.classList.add("single");
+          bodyTag.classList.remove("blog");
+          bodyTag.classList.add("page-id-297");
+        },
+        beforeLeave() {
+          bodyTag.classList.remove("single");
+          bodyTag.classList.add("blog");
+          bodyTag.classList.add("page-id-297");
         }
       }
     ]
