@@ -942,9 +942,9 @@ footer.hidden {
 }
 
 .modal-img-content img {
-  max-width: 80vw;
-  max-height: 80vh;
-  width: 80vmin;
+  max-width: 85vw;
+  max-height: 85vh;
+  width: 85vmin;
   height: auto;
   object-fit: contain;
 }
