@@ -323,6 +323,7 @@ h3 {
 } 
 
 .card.telas img {
+  max-width: 40%;
   object-fit: cover;
   object-position: 36% center;
 }

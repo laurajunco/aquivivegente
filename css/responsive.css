@@ -1,11 +1,3 @@
-:root {
-  --extra-large: 1300px;
-  --large: 1000px;
-  --medium: 992px;
-  --small: 768px;
-  --extra-small: 550px;
-}
-
 @media (max-width: 1300px) {
 
   body {
@@ -101,6 +93,10 @@
     flex-direction: column;
   }
 
+  .card.telas img {
+    max-width: 100%;
+  }
+  
   .card-container {
     padding: 20px;
   }
