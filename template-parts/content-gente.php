@@ -13,6 +13,7 @@
 	<div class="group-title">
 		<h3> <?php the_title(); ?></h3>
 		<p> <?php the_field( 'lugar' ); ?></p>
+		<img class="close-group show-on-mobile" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/close-menu.svg">
 	</div>
 	
 	<div class="group-content">

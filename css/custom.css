@@ -113,6 +113,12 @@ h3 {
 .site-branding a,  .site-branding-mobile a {
   color: black;
 }
+.site-branding a:focus,
+.site-branding-mobile a:focus,
+.site-branding a:hover,
+.site-branding-mobile a:hover {
+  text-decoration: none;
+}
 
 .site-branding-mobile {
   background-color: white;

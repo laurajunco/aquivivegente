@@ -11,7 +11,7 @@
       const currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
         navBarTag.style.top = "0";
-      } else {
+      } else if (window.pageYOffset > 59) {
         navBarTag.style.top = "-60px";
       }
       prevScrollpos = currentScrollPos;
@@ -32,6 +32,7 @@
     $('.open-modal').on('click', function() {
       $('.modal-img-content').html($(this).html());  
       $('footer').hide();
+      $('.site-branding-mobile').hide();
       $('.modal-img').show();
       $('html').css('overflow', 'hidden');
       return false;
@@ -40,6 +41,7 @@
     $('.open-modal-obj').on('click', function() {
       $('.modal-img-content').html($(this).find("img")[0]);  
       $('.modal-img').show();
+      $('.site-branding-mobile').hide();
       $('footer').hide();
       $('html').css('overflow', 'hidden');
       return false;
@@ -48,6 +50,7 @@
     $('.modal-img-close, .modal-img-background, .modal-img-content').on('click', function() {
       $('.modal-img').hide();
       $('footer').show();
+      $('.site-branding-mobile').show();
       $('html').css('overflow', 'auto');
       return false;
     })
