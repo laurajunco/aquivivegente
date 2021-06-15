@@ -1,3 +1,9 @@
+@media (max-width: 1500px) {
+  .objetos .card.horizontal img {
+    max-width: 40%;
+  }
+}
+
 @media (max-width: 1300px) {
 
   body {
@@ -42,6 +48,10 @@
     flex-direction: column;
   }
 
+  .objetos .card.horizontal img {
+    max-width: 100%;
+  }
+  
   .card-content p {
     max-width: 95%;
   }
@@ -96,7 +106,7 @@
   .card.telas img {
     max-width: 100%;
   }
-  
+
   .card-container {
     padding: 20px;
   }

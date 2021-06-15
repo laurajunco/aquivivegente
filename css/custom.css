@@ -368,6 +368,10 @@ h3 {
   flex-direction: row;
 }
 
+.objetos .card.horizontal img {
+  max-width: 30%;
+}
+
 .objetos .card-container img {
   object-fit: cover;
 }
