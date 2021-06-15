@@ -87,6 +87,15 @@ h3.entrar a {
 }
 
 @media (max-width: 550px) {
+  .home p, .home h3.entrar, .home h6 {
+    max-width: 85%;
+  }
+
+  .home p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
   .home h1 {
     font-size: 38px;
   }
@@ -97,8 +106,8 @@ h3.entrar a {
     margin-bottom: 80px;
   }
 
-  .home h3.entrar {
-    font-size: 26px;
+  .home h3.entrar a {
+    font-size: 16px;
   }
 }
 

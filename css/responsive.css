@@ -294,7 +294,7 @@
   }
   
   .site-main {
-    margin-top: 15vh;
+    margin-top: 20vh;
   }
 
   .card-container {
@@ -316,7 +316,7 @@
 
   .card-content {
     min-height: 0;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
   }
 
   .fixed-circle {
@@ -364,6 +364,7 @@
 
   .content-link {
     margin-top: 40px;
+    font-size: 12px;
   }
 
   .objetos-container {
@@ -386,7 +387,7 @@
 
   .content-container-gente {
     padding: 0;
-    margin-top: calc(-15vh + 60px);
+    margin-top: calc(-20vh + 60px);
   }
 
   .la-gente-galeria, .la-gente-galeria .grupo {
@@ -444,5 +445,39 @@
   .la-gente-galeria .grupo.open .close-group {
     opacity: 1;
     transform: rotate(180deg);
+  }
+
+  .site-info {
+    padding: 15px 10px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .modal-img-close {
+    padding: 205px;
+  }
+
+  .modal-img-close img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .site-branding-mobile h1 {
+    font-size: 7vw;
+  }
+
+  .content-title h2 {
+    font-size: 22px;
+  }
+
+  .content-container p {
+    font-size: 12px;
+  }
+
+  .group-title h3 {
+    font-size: 18px;
   }
 }
