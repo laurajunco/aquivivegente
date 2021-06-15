@@ -51,6 +51,7 @@ if ( ! function_exists( 'aquivivegente_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'aquivivegente' ),
+				'menu-2' => esc_html__( 'Mobile', 'aquivivegente' )
 			)
 		);
 

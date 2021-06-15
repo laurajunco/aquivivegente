@@ -199,6 +199,9 @@
         },
         beforeLeave({next})  {
           selectNav(next)
+        },
+        beforeEnter() {
+          hideElems()
         }
       }
     ],
@@ -231,6 +234,27 @@
         link.parentNode.classList.add("current-menu-item")
       } else {
         link.parentNode.classList.remove("current-menu-item")
+      }
+    })
+  }
+
+  const hideElems = () => {
+    const  hideSmall = document.querySelectorAll(".hide-on-small");
+    const  showSmall = document.querySelectorAll(".show-on-small");
+    
+    hideSmall.forEach(tag => {
+      if (window.innerWidth <= 992) {
+        tag.style.display = "none"
+      } else {
+        tag.style.display = "block"
+      }
+    })
+
+    showSmall.forEach(tag => {
+      if (window.innerWidth <= 992) {
+        tag.style.display = "block"
+      } else {
+        tag.style.display = "none"
       }
     })
   }
