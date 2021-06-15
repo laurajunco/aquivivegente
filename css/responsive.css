@@ -477,7 +477,7 @@
     width: 15px;
   }
 
-  .galeria, .slick-carrusel-arrows {
+  .galeria, .slick-carrusel-arrows, .media-col {
     max-width: 100%;
   }
   
