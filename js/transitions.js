@@ -129,15 +129,6 @@
       ]
     });
 
-    $('.galeria').on('mousewheel', function(e) {
-      const deltaX = e.originalEvent.deltaX
-      if (deltaX > 10) {
-        $('.galeria').slick('slickNext');
-      } else if (deltaX < -10){
-        $('.galeria').slick('slickPrev');
-      }
-    });
-
     /* subir la gente */
     $('.la-gente-galeria').on('init', function() {
       const slickClones = document.querySelectorAll(".slick-slide")
@@ -171,15 +162,6 @@
           settings: "unslick"
         }
       ]
-    });
-
-    $('.la-gente-galeria').on('mousewheel', function(e) {
-      const deltaX = e.originalEvent.deltaX
-      if (deltaX > 10) {
-        $('.la-gente-galeria').slick('slickNext');
-      } else if (deltaX < -10){
-        $('.la-gente-galeria').slick('slickPrev');
-      }
     });
 
     /* acordeon la gente mobile */
