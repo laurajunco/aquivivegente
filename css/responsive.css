@@ -79,6 +79,13 @@
     margin-top: 0;
   }
 
+  .objetos .card-container:nth-child(4) img, 
+  .objetos .card-container:nth-child(3) img,
+  .objetos .card-container:nth-child(12) img,
+  .objetos .card-container:nth-child(8) img,
+  .objetos .card-container:nth-child(7) img  {
+    object-position: center center;
+  }
 }
 
 @media (max-width: 1200px) {
