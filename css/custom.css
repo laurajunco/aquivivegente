@@ -395,7 +395,7 @@ h3 {
 
 .objetos .card-container .text p {
   font-size: 15px;
-  max-width: 95%;
+  max-width: 100%;
 }
 
 .objetos .card-container:nth-child(1) {
@@ -405,7 +405,6 @@ h3 {
 .objetos .card-container:nth-child(1) {
   margin-bottom: 5vh;
 }
-
 
 .objetos .card-container:nth-child(2) {
   margin-bottom: 7vh;
