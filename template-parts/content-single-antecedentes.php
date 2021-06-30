@@ -34,7 +34,7 @@
       </div>
     <?php endif; ?>
 
-    <?php if( get_field('img3') ): ?>
+    <?php if( get_field('img4') ): ?>
       <div class="img-container m-top">
           <img class="grilla" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/grilla_amarilla_hor.svg" alt="">
           <a href="#" class="open-modal"> 
